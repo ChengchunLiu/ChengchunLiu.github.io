@@ -74,8 +74,7 @@ mask = Image.new("L", (target_w, target_h), 0)
 mask_draw = ImageDraw.Draw(mask)
 mask_draw.rounded_rectangle((0, 0, target_w, target_h), radius=15, fill=255)
 card.paste(portrait, (20, 20), mask)
-card_draw.text((22, 458), "Ph.D. researcher · Peking University", font=font(bold, 16), fill=INK)
-card_draw.text((22, 485), "Beijing · UTC+8", font=font(regular, 15), fill=MUTED)
+card_draw.text((22, 470), "Ph.D. candidate · Peking University", font=font(bold, 16), fill=INK)
 
 canvas.paste(card, (790, 58), card)
 
