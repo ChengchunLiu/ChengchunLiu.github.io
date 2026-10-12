@@ -34,10 +34,14 @@
   --shadow: 0 28px 80px rgba(30, 40, 35, 0.08);
 }
 
-html[lang="zh-Hans"],
+html[lang="zh-Hans"] {
+  --serif: "Iowan Old Style", "Baskerville", "Songti SC", "STSong", "Noto Serif CJK SC", "Times New Roman", serif;
+  --sans: "Lato Local", "Helvetica Neue", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif;
+}
+
 html[lang="zh-Hant"] {
-  --serif: "Songti SC", "Songti TC", "STSong", "Noto Serif CJK SC", "Noto Serif CJK TC", "PMingLiU", serif;
-  --sans: "Lato Local", "PingFang SC", "PingFang TC", "Noto Sans CJK SC", "Noto Sans CJK TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
+  --serif: "Iowan Old Style", "Baskerville", "Songti TC", "PMingLiU", "Noto Serif CJK TC", "Songti SC", "Times New Roman", serif;
+  --sans: "Lato Local", "Helvetica Neue", "PingFang TC", "Noto Sans CJK TC", "Microsoft JhengHei", "PingFang SC", Arial, sans-serif;
 }
 
 * {
