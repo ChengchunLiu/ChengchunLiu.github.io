@@ -69,11 +69,11 @@
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
-    <header class="site-header" aria-label="Primary navigation">
+    <header class="site-header" data-i18n-aria-label="primaryNav" aria-label="Primary navigation">
       <a class="monogram" href="#top" aria-label="Chengchun Liu, home">
         <span>CCL</span><i aria-hidden="true"></i>
       </a>
-      <nav class="nav-links" aria-label="Sections">
+      <nav class="nav-links" data-i18n-aria-label="sections" aria-label="Sections">
         <a href="#work" data-i18n="navWork">Work</a>
         <a href="#about" data-i18n="navAbout">About</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
@@ -83,6 +83,14 @@
         <span class="language-divider">/</span>
         <span class="language-other">中</span>
       </button>
+      <details class="mobile-menu">
+        <summary data-i18n="menu">Menu</summary>
+        <nav data-i18n-aria-label="mobileSections" aria-label="Mobile sections">
+          <a href="#work" data-i18n="navWork">Work</a>
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+      </details>
     </header>
 
     <main id="main">
@@ -134,12 +142,13 @@
           </div>
         </div>
 
-        <aside class="profile-card reveal" aria-label="Profile summary">
+        <aside class="profile-card reveal" data-i18n-aria-label="profileSummary" aria-label="Profile summary">
           <div class="profile-photo-wrap">
             <img
               class="profile-photo"
               src="assets/chengchun-liu.jpg"
               alt="Portrait of Chengchun Liu"
+              data-i18n-alt="portraitAlt"
               width="760"
               height="1013"
             />
@@ -155,7 +164,7 @@
           </div>
         </aside>
 
-        <div class="focus-line reveal" aria-label="Research areas">
+        <div class="focus-line reveal" data-i18n-aria-label="researchAreas" aria-label="Research areas">
           <span class="focus-label" data-i18n="focusLabel">Research focus</span>
           <div class="focus-list">
             <span data-i18n="focus1">Scientific agents</span>
@@ -196,7 +205,7 @@
               <span data-i18n="viewPaper">View paper</span><span aria-hidden="true">↗</span>
             </a>
           </div>
-          <figure class="work-visual spectro-visual" aria-label="An original diagram of multimodal spectra, a molecular hypothesis, and constrained refinement">
+          <figure class="work-visual spectro-visual" data-i18n-aria-label="spectroVisualLabel" aria-label="An original diagram of multimodal spectra, a molecular hypothesis, and constrained refinement">
             <div class="spectra-stack" aria-hidden="true">
               <div class="spectrum-sheet sheet-ms">
                 <span>MS</span>
@@ -269,7 +278,7 @@
           </div>
           <figure class="work-visual geo-visual" aria-label="A conceptual diagram of single-step molecular geometry refinement">
             <div class="geo-label geo-label-left" data-i18n="geoInput">Force-field conformer</div>
-            <svg viewBox="0 0 560 300" role="img" aria-label="A rough molecule transformed into a refined geometry">
+            <svg viewBox="0 0 560 300" role="img" data-i18n-aria-label="geoVisualLabel" aria-label="A rough molecule transformed into a refined geometry">
               <defs>
                 <linearGradient id="arrowGradient" x1="0" y1="0" x2="1" y2="0">
                   <stop offset="0" stop-color="#3157ff" />
@@ -315,12 +324,13 @@
               <img
                 src="assets/symbolic-regression.png"
                 alt="Unsupervised hierarchical symbolic regression framework"
+                data-i18n-alt="uhsrAlt"
                 loading="lazy"
                 width="1500"
                 height="824"
               />
               <figcaption class="license-caption">
-                <span data-i18n="uhsrCredit">Research figure: Lou et al., Advanced Science (2026).</span>
+                <a href="https://doi.org/10.1002/advs.202521200" target="_blank" rel="noopener noreferrer" data-i18n="uhsrCredit">Figure from Lou et al., Advanced Science 2026, e21200; resized.</a>
                 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>
               </figcaption>
             </figure>
@@ -341,7 +351,7 @@
           </article>
 
           <article class="work-card work-card-compact accent-orange reveal">
-            <figure class="work-visual chromatography-visual" aria-label="An original multiscale diagram for AI-powered chromatography">
+            <figure class="work-visual chromatography-visual" data-i18n-aria-label="chromVisualLabel" aria-label="An original multiscale diagram for AI-powered chromatography">
               <div class="scale-axis" aria-hidden="true"><span></span></div>
               <div class="scale-node scale-molecule">
                 <div class="node-icon molecule-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
@@ -378,7 +388,7 @@
           </article>
 
           <article class="work-card work-card-compact accent-red reveal">
-            <figure class="work-visual spectrum-visual" aria-label="Stylized infrared spectrum">
+            <figure class="work-visual spectrum-visual" data-i18n-aria-label="irVisualLabel" aria-label="Stylized infrared spectrum">
               <div class="spectrum-grid" aria-hidden="true"></div>
               <svg viewBox="0 0 600 270" role="img" aria-label="A stylized infrared spectrum with highlighted functional-group region">
                 <rect x="70" y="28" width="190" height="210" rx="3" fill="#ff795f" opacity="0.11" />
@@ -418,7 +428,7 @@
           </article>
 
           <article class="work-card work-card-compact accent-teal reveal">
-            <figure class="work-visual paradigm-visual" aria-label="Research paradigm moving from manual work to autonomous science">
+            <figure class="work-visual paradigm-visual" data-i18n-aria-label="paradigmVisualLabel" aria-label="Research paradigm moving from manual work to autonomous science">
               <div class="paradigm-step">
                 <span class="step-number">01</span>
                 <strong data-i18n="manual">Manual</strong>
@@ -484,7 +494,7 @@
               with the Seed Edge team, exploring scientific agents and AI-driven research workflows.
             </p>
           </div>
-          <div class="timeline reveal" aria-label="Education and experience">
+          <div class="timeline reveal" data-i18n-aria-label="educationExperience" aria-label="Education and experience">
             <div class="timeline-item">
               <time>2026 — <span data-i18n="present">Present</span></time>
               <h3>ByteDance Seed</h3>

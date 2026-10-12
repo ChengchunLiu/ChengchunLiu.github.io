@@ -4,6 +4,20 @@ const translations = {
     navWork: "Work",
     navAbout: "About",
     navContact: "Contact",
+    menu: "Menu",
+    primaryNav: "Primary navigation",
+    sections: "Sections",
+    mobileSections: "Mobile sections",
+    profileSummary: "Profile summary",
+    portraitAlt: "Portrait of Chengchun Liu",
+    researchAreas: "Research areas",
+    spectroVisualLabel: "An original diagram of multimodal spectra, a molecular hypothesis, and constrained refinement",
+    geoVisualLabel: "A rough molecule transformed into a refined geometry",
+    uhsrAlt: "Unsupervised hierarchical symbolic regression framework",
+    chromVisualLabel: "An original multiscale diagram for AI-powered chromatography",
+    irVisualLabel: "Stylized infrared spectrum",
+    paradigmVisualLabel: "Research paradigm moving from manual work to autonomous science",
+    educationExperience: "Education and experience",
     heroLine1: "AI for chemistry.",
     heroLine2: "Built to reason.",
     heroIntro:
@@ -48,7 +62,7 @@ const translations = {
     geoCaption: "One deterministic refinement step",
     symbolicDesc:
       "A layered symbolic-learning framework that turns complex multivariable relationships into compact, chemically interpretable equations.",
-    uhsrCredit: "Research figure: Lou et al., Advanced Science (2026).",
+    uhsrCredit: "Figure from Lou et al., Advanced Science 2026, e21200; resized.",
     chromDesc:
       "A research perspective connecting automated experimentation, retention prediction, condition optimization, and closed-loop chromatographic separation.",
     scaleMolecule: "Molecule",
@@ -96,6 +110,20 @@ const translations = {
     navWork: "代表工作",
     navAbout: "关于我",
     navContact: "联系",
+    menu: "菜单",
+    primaryNav: "主导航",
+    sections: "页面栏目",
+    mobileSections: "手机端页面栏目",
+    profileSummary: "个人简介",
+    portraitAlt: "刘丞军肖像照",
+    researchAreas: "研究方向",
+    spectroVisualLabel: "多模态光谱、分子结构假设与约束修正的原创示意图",
+    geoVisualLabel: "从初始分子构象到精修几何的原创示意图",
+    uhsrAlt: "无监督层次符号回归研究框架",
+    chromVisualLabel: "人工智能驱动色谱的原创跨尺度示意图",
+    irVisualLabel: "红外光谱与结构邻近机制示意图",
+    paradigmVisualLabel: "从人工研究到自动化与科学智能体的研究范式示意图",
+    educationExperience: "教育与经历",
     heroLine1: "人工智能 × 化学。",
     heroLine2: "让机器学会推理。",
     heroIntro:
@@ -138,7 +166,7 @@ const translations = {
     geoOutput: "DFT 水平几何",
     geoCaption: "单步确定性几何精修",
     symbolicDesc: "以层次化符号学习把复杂多变量关系转化为紧凑、具有化学可解释性的显式方程。",
-    uhsrCredit: "研究图：Lou 等，Advanced Science（2026）。",
+    uhsrCredit: "图源：Lou 等，Advanced Science 2026，e21200；已缩放。",
     chromDesc: "系统连接自动化实验、保留行为预测、条件优化与闭环色谱分离，梳理智能色谱的发展路径。",
     scaleMolecule: "分子",
     scaleSurface: "界面",
@@ -182,6 +210,24 @@ const languageButton = document.querySelector(".language-toggle");
 const languageCurrent = document.querySelector(".language-current");
 const languageOther = document.querySelector(".language-other");
 const translatableElements = document.querySelectorAll("[data-i18n]");
+const translatableAltElements = document.querySelectorAll("[data-i18n-alt]");
+const translatableAriaElements = document.querySelectorAll("[data-i18n-aria-label]");
+
+function saveLanguage(language) {
+  try {
+    window.localStorage.setItem("portfolio-language", language);
+  } catch (_error) {
+    // The language switch remains functional when storage is unavailable.
+  }
+}
+
+function readSavedLanguage() {
+  try {
+    return window.localStorage.getItem("portfolio-language");
+  } catch (_error) {
+    return null;
+  }
+}
 
 function applyLanguage(language) {
   const copy = translations[language];
@@ -193,6 +239,16 @@ function applyLanguage(language) {
     }
   });
 
+  translatableAltElements.forEach((element) => {
+    const key = element.dataset.i18nAlt;
+    if (copy[key]) element.setAttribute("alt", copy[key]);
+  });
+
+  translatableAriaElements.forEach((element) => {
+    const key = element.dataset.i18nAriaLabel;
+    if (copy[key]) element.setAttribute("aria-label", copy[key]);
+  });
+
   const isChinese = language === "zh";
   document.documentElement.lang = isChinese ? "zh-CN" : "en";
   document.title = isChinese
@@ -202,14 +258,14 @@ function applyLanguage(language) {
   languageOther.textContent = isChinese ? "EN" : "中";
   languageButton.setAttribute("aria-pressed", String(isChinese));
   languageButton.setAttribute("aria-label", isChinese ? "Switch to English" : "切换为中文");
-  window.localStorage.setItem("portfolio-language", language);
+  saveLanguage(language);
 }
 
 languageButton.addEventListener("click", () => {
   applyLanguage(document.documentElement.lang.startsWith("zh") ? "en" : "zh");
 });
 
-const savedLanguage = window.localStorage.getItem("portfolio-language");
+const savedLanguage = readSavedLanguage();
 const preferredLanguage = navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en";
 applyLanguage(savedLanguage || preferredLanguage);
 
@@ -224,6 +280,8 @@ const revealObserver = new IntersectionObserver(
   },
   { threshold: 0.12, rootMargin: "0px 0px -40px" },
 );
+
+document.documentElement.classList.add("motion-ready");
 
 document.querySelectorAll(".reveal").forEach((element, index) => {
   element.style.transitionDelay = `${Math.min(index % 3, 2) * 80}ms`;
