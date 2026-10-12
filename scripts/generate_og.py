@@ -79,9 +79,6 @@ card_draw.text((22, 485), "Beijing · UTC+8", font=font(regular, 15), fill=MUTED
 
 canvas.paste(card, (790, 58), card)
 
-draw.ellipse((1070, 422, 1124, 476), fill=LIME, outline=INK, width=2)
-draw.text((1081, 431), "C", font=font(serif, 31), fill=INK)
-
 OUT.parent.mkdir(parents=True, exist_ok=True)
 canvas.save(OUT, format="PNG", optimize=True)
 print(OUT)

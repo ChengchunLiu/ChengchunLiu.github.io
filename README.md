@@ -26,7 +26,7 @@ Before publishing, confirm:
 
 - the final GitHub account or hosting provider;
 - whether to add a downloadable public CV;
-- whether to add GitHub, ORCID, or other profile links;
+- whether to add any additional public profile links;
 - the final personal domain, if any.
 
 Only first- and co-first-author papers are featured on the homepage. The complete record is linked through Google Scholar.

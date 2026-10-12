@@ -11,6 +11,7 @@ Target public address: `https://chengchunliu.github.io/`
 - Public research interests and selected first/co-first-author work
 - Peking University email address
 - Google Scholar, GitHub, ORCID, DOI, and public code links
+- LinkedIn public profile
 
 ## Intentionally excluded
 
