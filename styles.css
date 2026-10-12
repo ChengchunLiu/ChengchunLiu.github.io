@@ -339,7 +339,7 @@ h1 em {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px 12px;
+  gap: 10px 7px;
 }
 
 .button {
@@ -432,6 +432,11 @@ h1 em {
 .platform-icon-linkedin {
   color: #2457a6;
   background: rgba(49, 87, 255, 0.08);
+}
+
+.platform-icon-instagram {
+  color: #b83280;
+  background: rgba(216, 50, 126, 0.08);
 }
 
 .platform-link:hover .platform-icon,
@@ -2182,17 +2187,45 @@ h1 em {
   }
 
   .hero-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 12px;
     align-items: stretch;
-    flex-direction: column;
   }
 
   .button {
     width: 100%;
   }
 
+  .button-dark {
+    grid-column: 1 / -1;
+  }
+
   .button-text {
-    width: auto;
-    align-self: flex-start;
+    width: 100%;
+    min-width: 0;
+    align-self: stretch;
+  }
+
+  .platform-link {
+    justify-content: flex-start;
+  }
+
+  .platform-link:last-child {
+    grid-column: 1 / -1;
+    width: max-content;
+    justify-self: center;
+  }
+
+  .platform-icon {
+    width: 18px;
+    height: 18px;
+    flex-basis: 18px;
+  }
+
+  .platform-icon svg {
+    width: 12px;
+    height: 12px;
   }
 
   .work-kicker {
