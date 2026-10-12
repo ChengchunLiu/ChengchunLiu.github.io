@@ -30,6 +30,7 @@
       content="Research at the intersection of artificial intelligence and chemistry."
     />
     <meta name="twitter:image" content="https://chengchunliu.github.io/assets/og-preview.png" />
+    <meta name="twitter:image:alt" content="Chengchun Liu — AI for Chemistry research portfolio" />
     <title>Chengchun Liu — AI for Chemistry</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="site.webmanifest" />
@@ -70,7 +71,7 @@
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
     <header class="site-header" data-i18n-aria-label="primaryNav" aria-label="Primary navigation">
-      <a class="monogram" href="#top" aria-label="Chengchun Liu, home">
+      <a class="monogram" href="#top" data-i18n-aria-label="homeLabel" aria-label="Chengchun Liu, home">
         <span>CCL</span><i aria-hidden="true"></i>
       </a>
       <nav class="nav-links" data-i18n-aria-label="sections" aria-label="Sections">
@@ -191,17 +192,17 @@
               <span class="role-pill" data-i18n="roleCoFirstLead">Co-first author · listed first</span>
               <span>Angew. Chem. Int. Ed. · 2026</span>
             </div>
-            <h3>Hypothesis-and-Refinement Learning of Organic Structures From Multimodal Spectroscopic Data</h3>
+            <h3 id="work-spectromol">Hypothesis-and-Refinement Learning of Organic Structures From Multimodal Spectroscopic Data</h3>
             <p data-i18n="spectroDesc">
               A hypothesis-and-refinement system that proposes molecular structures from multimodal spectra,
               then repairs them with formula-, exact-mass-, and unsaturation-aware molecular generation.
             </p>
-            <div class="tag-list" aria-label="Topics">
+            <div class="tag-list" data-i18n-aria-label="topics" aria-label="Topics">
               <span data-i18n="tagMultimodal">Multimodal spectra</span>
               <span data-i18n="tagElucidation">Structure elucidation</span>
               <span data-i18n="tagGen">Generative models</span>
             </div>
-            <a class="paper-link" href="https://doi.org/10.1002/anie.9212238" target="_blank" rel="noopener noreferrer">
+            <a class="paper-link" href="https://doi.org/10.1002/anie.9212238" target="_blank" rel="noopener noreferrer" aria-describedby="work-spectromol">
               <span data-i18n="viewPaper">View paper</span><span aria-hidden="true">↗</span>
             </a>
           </div>
@@ -224,7 +225,7 @@
             <div class="hypothesis-card">
               <span class="visual-step">01</span>
               <strong data-i18n="hypothesis">Hypothesis</strong>
-              <svg viewBox="0 0 180 125" role="img" aria-label="Candidate molecular structure">
+              <svg viewBox="0 0 180 125" role="img" data-i18n-aria-label="candidateMolecule" aria-label="Candidate molecular structure">
                 <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
                   <path d="m42 63 27-35h43l27 35-27 35H69z" />
                   <path d="M69 28 90 63l22-35M90 63l22 35" />
@@ -257,26 +258,26 @@
               <span class="role-pill" data-i18n="roleFirst">First author</span>
               <span>J. Chem. Theory Comput. · 2026</span>
             </div>
-            <h3>A Cross-Domain Graph Learning Protocol for Single-Step Molecular Geometry Refinement</h3>
+            <h3 id="work-geoopt">A Cross-Domain Graph Learning Protocol for Single-Step Molecular Geometry Refinement</h3>
             <p data-i18n="geoDesc">
               GeoOpt-Net uses SE(3)-equivariant, multifidelity learning to map inexpensive force-field conformers
               directly toward DFT-quality molecular geometries in one deterministic forward pass.
             </p>
-            <div class="tag-list" aria-label="Topics">
+            <div class="tag-list" data-i18n-aria-label="topics" aria-label="Topics">
               <span>SE(3)</span>
               <span data-i18n="tagGeometry">Molecular geometry</span>
               <span data-i18n="tagQuantum">Quantum chemistry</span>
             </div>
             <div class="work-links">
-              <a class="paper-link" href="https://doi.org/10.1021/acs.jctc.6c01080" target="_blank" rel="noopener noreferrer">
+              <a class="paper-link" href="https://doi.org/10.1021/acs.jctc.6c01080" target="_blank" rel="noopener noreferrer" aria-describedby="work-geoopt">
                 <span data-i18n="viewPaper">View paper</span><span aria-hidden="true">↗</span>
               </a>
-              <a class="paper-link" href="https://github.com/ChengchunLiu/GeoOpt_Net" target="_blank" rel="noopener noreferrer">
+              <a class="paper-link" href="https://github.com/ChengchunLiu/GeoOpt_Net" target="_blank" rel="noopener noreferrer" aria-describedby="work-geoopt">
                 <span data-i18n="viewCode">View code</span><span aria-hidden="true">↗</span>
               </a>
             </div>
           </div>
-          <figure class="work-visual geo-visual" aria-label="A conceptual diagram of single-step molecular geometry refinement">
+          <figure class="work-visual geo-visual" data-i18n-aria-label="geoFigureLabel" aria-label="A conceptual diagram of single-step molecular geometry refinement">
             <div class="geo-label geo-label-left" data-i18n="geoInput">Force-field conformer</div>
             <svg viewBox="0 0 560 300" role="img" data-i18n-aria-label="geoVisualLabel" aria-label="A rough molecule transformed into a refined geometry">
               <defs>
@@ -339,12 +340,12 @@
                 <span class="role-pill" data-i18n="roleCoFirst">Co-first author</span>
                 <span>Advanced Science · 2026</span>
               </div>
-              <h3>Unsupervised Hierarchical Symbolic Regression for Interpretable Property Modeling in Complex Multi-Variable Systems</h3>
+              <h3 id="work-uhsr">Unsupervised Hierarchical Symbolic Regression for Interpretable Property Modeling in Complex Multi-Variable Systems</h3>
               <p data-i18n="symbolicDesc">
                 A layered symbolic-learning framework that turns complex multivariable relationships into compact,
                 chemically interpretable equations.
               </p>
-              <a class="paper-link" href="https://doi.org/10.1002/advs.202521200" target="_blank" rel="noopener noreferrer">
+              <a class="paper-link" href="https://doi.org/10.1002/advs.202521200" target="_blank" rel="noopener noreferrer" aria-describedby="work-uhsr">
                 <span data-i18n="viewPaper">View paper</span><span aria-hidden="true">↗</span>
               </a>
             </div>
@@ -376,12 +377,12 @@
                 <span class="role-pill" data-i18n="roleFirstAccount">First author · Account</span>
                 <span>Accounts Chem. Res. · 2026</span>
               </div>
-              <h3>Automation and AI-Powered Prediction in Chromatographic Separation</h3>
+              <h3 id="work-chromatography">Automation and AI-Powered Prediction in Chromatographic Separation</h3>
               <p data-i18n="chromDesc">
                 A research perspective connecting automated experimentation, retention prediction,
                 condition optimization, and closed-loop chromatographic separation.
               </p>
-              <a class="paper-link" href="https://doi.org/10.1021/acs.accounts.5c00677" target="_blank" rel="noopener noreferrer">
+              <a class="paper-link" href="https://doi.org/10.1021/acs.accounts.5c00677" target="_blank" rel="noopener noreferrer" aria-describedby="work-chromatography">
                 <span data-i18n="viewPaper">View paper</span><span aria-hidden="true">↗</span>
               </a>
             </div>
@@ -390,7 +391,7 @@
           <article class="work-card work-card-compact accent-red reveal">
             <figure class="work-visual spectrum-visual" data-i18n-aria-label="irVisualLabel" aria-label="Stylized infrared spectrum">
               <div class="spectrum-grid" aria-hidden="true"></div>
-              <svg viewBox="0 0 600 270" role="img" aria-label="A stylized infrared spectrum with highlighted functional-group region">
+              <svg viewBox="0 0 600 270" role="img" data-i18n-aria-label="irSpectrumLabel" aria-label="A stylized infrared spectrum with highlighted functional-group region">
                 <rect x="70" y="28" width="190" height="210" rx="3" fill="#ff795f" opacity="0.11" />
                 <path
                   d="M35 82 C70 80, 82 86, 110 83 S150 78, 167 86 S186 103, 202 83 S220 74, 236 84 S255 195, 270 88 S292 76, 310 84 S326 110, 338 83 S355 72, 372 84 S393 210, 410 83 S430 76, 446 86 S468 136, 482 84 S508 74, 528 86 S550 95, 570 84"
@@ -411,16 +412,16 @@
                 <span class="role-pill" data-i18n="roleFirst">First author</span>
                 <span>Analytical Chemistry · 2024</span>
               </div>
-              <h3>Infrared Spectra Prediction for Functional Group Region Utilizing a Machine Learning Approach With Structural Neighboring Mechanism</h3>
+              <h3 id="work-infrared">Infrared Spectra Prediction for Functional Group Region Utilizing a Machine Learning Approach With Structural Neighboring Mechanism</h3>
               <p data-i18n="irDesc">
                 A functional-group-centered learning strategy that uses local structural context to improve
                 the accuracy, robustness, and interpretability of infrared-spectrum prediction.
               </p>
               <div class="work-links">
-                <a class="paper-link" href="https://doi.org/10.1021/acs.analchem.4c01972" target="_blank" rel="noopener noreferrer">
+                <a class="paper-link" href="https://doi.org/10.1021/acs.analchem.4c01972" target="_blank" rel="noopener noreferrer" aria-describedby="work-infrared">
                   <span data-i18n="viewPaper">View paper</span><span aria-hidden="true">↗</span>
                 </a>
-                <a class="paper-link" href="https://github.com/ChengchunLiu/IR-DIAZO-KETONE" target="_blank" rel="noopener noreferrer">
+                <a class="paper-link" href="https://github.com/ChengchunLiu/IR-DIAZO-KETONE" target="_blank" rel="noopener noreferrer" aria-describedby="work-infrared">
                   <span data-i18n="viewCode">View code</span><span aria-hidden="true">↗</span>
                 </a>
               </div>
@@ -452,12 +453,12 @@
                 <span class="role-pill" data-i18n="roleFirstPerspective">First author · Perspective</span>
                 <span>National Science Open · 2024</span>
               </div>
-              <h3>Transforming Organic Chemistry Research Paradigms: Moving From Manual Efforts to the Intersection of Automation and Artificial Intelligence</h3>
+              <h3 id="work-perspective">Transforming Organic Chemistry Research Paradigms: Moving From Manual Efforts to the Intersection of Automation and Artificial Intelligence</h3>
               <p data-i18n="paradigmDesc">
                 A forward-looking framework for moving organic chemistry from manual workflows toward the
                 productive intersection of automation and artificial intelligence.
               </p>
-              <a class="paper-link" href="https://doi.org/10.1360/nso/20230037" target="_blank" rel="noopener noreferrer">
+              <a class="paper-link" href="https://doi.org/10.1360/nso/20230037" target="_blank" rel="noopener noreferrer" aria-describedby="work-perspective">
                 <span data-i18n="viewPaper">View paper</span><span aria-hidden="true">↗</span>
               </a>
             </div>
