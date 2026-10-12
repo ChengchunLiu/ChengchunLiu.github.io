@@ -314,7 +314,9 @@ h1 em {
 .profile-card {
   position: relative;
   z-index: 2;
+  width: min(92%, 370px);
   align-self: center;
+  justify-self: center;
   padding: 14px;
   border: 1px solid var(--line);
   border-radius: calc(var(--radius) + 2px);
@@ -1221,7 +1223,7 @@ h1 em {
   }
 
   .profile-card {
-    max-width: 440px;
+    max-width: 370px;
     justify-self: center;
     transform: none;
   }
