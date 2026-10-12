@@ -31,7 +31,7 @@ Before publishing, confirm:
 
 Only first- and co-first-author papers are featured on the homepage. The complete record is linked through Google Scholar.
 
-Publisher figures without a confirmed reuse license are represented by original website diagrams. The Advanced Science figure is used with an on-page CC BY 4.0 attribution.
+Research concepts are represented by original website diagrams rather than reproduced publisher figures.
 
 The social sharing image can be regenerated with:
 

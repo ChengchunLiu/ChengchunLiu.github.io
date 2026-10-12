@@ -36,7 +36,7 @@
     <link rel="preload" href="assets/fonts/lato-regular.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="preload" href="assets/fonts/lato-bold.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="preload" href="assets/chengchun-liu.jpg" as="image" />
-    <link rel="stylesheet" href="styles.css?v=20261012-email" />
+    <link rel="stylesheet" href="styles.css?v=20261012-symbolic" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -118,8 +118,7 @@
             <em data-i18n="heroLine2">Built to reason.</em>
           </h1>
           <p class="hero-intro" data-i18n="heroIntro">
-            I build scientific AI systems that move between spectra, molecular structure,
-            and chemical experiments — with physical constraints and interpretability kept in the loop.
+            Toward scientific AI that connects measurement, mechanism, and discovery.
           </p>
           <div class="hero-actions">
             <a class="button button-dark" href="#work">
@@ -343,19 +342,42 @@
 
         <div class="work-grid">
           <article class="work-card work-card-compact accent-violet reveal">
-            <figure class="work-visual visual-paper compact-image">
-              <img
-                src="assets/symbolic-regression.png"
-                alt="Unsupervised hierarchical symbolic regression framework"
-                data-i18n-alt="uhsrAlt"
-                loading="lazy"
-                width="1500"
-                height="824"
-              />
-              <figcaption class="license-caption">
-                <a href="https://doi.org/10.1002/advs.202521200" target="_blank" rel="noopener noreferrer">Lou et al., Advanced Science 2026, e21200 · resized</a>
-                <a class="license-link" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>
-              </figcaption>
+            <figure
+              class="work-visual symbolic-visual"
+              aria-label="An abstract diagram showing complex variables combined through hierarchical symbolic learning into an interpretable equation"
+            >
+              <div class="symbolic-pipeline" aria-hidden="true">
+                <div class="symbolic-panel symbolic-system">
+                  <span class="symbolic-stage-label">Multi-variable system</span>
+                  <div class="symbolic-variable-map">
+                    <svg viewBox="0 0 140 82">
+                      <path d="M18 22 63 13l54 18M18 22l25 42 40 5 34-38M63 13l20 56M43 64l74-33" />
+                    </svg>
+                    <i>x₁</i><i>x₂</i><i>x₃</i><i>x₄</i><i>x₅</i><i>xₙ</i>
+                  </div>
+                </div>
+
+                <span class="symbolic-arrow">→</span>
+
+                <div class="symbolic-panel symbolic-hierarchy">
+                  <span class="symbolic-stage-label">Hierarchical discovery</span>
+                  <div class="symbolic-level symbolic-level-source"><b>x₁</b><b>x₂</b><b>x₃</b><b>x₄</b></div>
+                  <span class="symbolic-level-arrow">↓</span>
+                  <div class="symbolic-level symbolic-level-combined"><b>x₁x₂</b><b>sin x₃</b></div>
+                  <span class="symbolic-level-arrow">↓</span>
+                  <div class="symbolic-level symbolic-level-rule"><b>Φ</b></div>
+                </div>
+
+                <span class="symbolic-down-arrow">↓</span>
+
+                <div class="symbolic-law">
+                  <span class="symbolic-stage-label">Interpretable law</span>
+                  <strong>ŷ = αΦ₁ + βΦ₂</strong>
+                  <div class="symbolic-contributions"><i></i><i></i><i></i></div>
+                  <small>compact · explicit · interpretable</small>
+                </div>
+              </div>
+              <figcaption>Many variables → hierarchical discovery → compact equation</figcaption>
             </figure>
             <div class="work-content">
               <div class="work-kicker">
@@ -534,6 +556,6 @@
       <a href="#top"><span data-i18n="backTop">Back to top</span> ↑</a>
     </footer>
 
-    <script src="script.js?v=20261012-email"></script>
+    <script src="script.js?v=20261012-symbolic"></script>
   </body>
 </html>
