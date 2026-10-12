@@ -599,6 +599,7 @@ h1 em {
 
 .work-visual {
   position: relative;
+  margin: 0;
   min-width: 0;
   overflow: hidden;
   background: var(--paper-deep);
@@ -635,60 +636,111 @@ h1 em {
 }
 
 .spectro-visual {
-  min-height: 575px;
-  padding: 48px 34px 32px;
+  min-height: 520px;
+  padding: 30px 22px 20px;
   display: grid;
-  grid-template-columns: 1fr auto 0.82fr auto 0.94fr;
-  gap: 18px;
-  align-items: center;
-  background: radial-gradient(circle at 18% 18%, rgba(49, 87, 255, 0.28), transparent 30%), radial-gradient(circle at 85% 82%, rgba(200, 255, 82, 0.38), transparent 28%), #dee1e9;
+  grid-template-columns: 1fr;
+  grid-template-rows: 82px 24px 150px 24px 145px auto;
+  gap: 8px;
+  align-content: center;
+  align-items: stretch;
+  background:
+    radial-gradient(circle at 12% 14%, rgba(49, 87, 255, 0.24), transparent 30%),
+    radial-gradient(circle at 88% 86%, rgba(200, 255, 82, 0.34), transparent 30%),
+    #dee1e9;
 }
 
-.spectra-stack { position: relative; min-height: 310px; }
+.spectra-stack {
+  position: relative;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
 
 .spectrum-sheet {
-  position: absolute;
-  width: min(230px, 100%);
-  padding: 12px 14px 10px;
+  position: relative;
+  width: auto;
+  padding: 9px 8px 7px;
   border: 1px solid rgba(19, 32, 29, 0.2);
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.82);
-  box-shadow: 0 14px 30px rgba(19, 32, 29, 0.1);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 8px 20px rgba(19, 32, 29, 0.08);
 }
 
 .spectrum-sheet span,
 .visual-step { display: block; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
 
-.spectrum-sheet svg { width: 100%; margin-top: 6px; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
-.sheet-ms { top: 10px; left: 0; color: #3157ff; transform: rotate(-5deg); }
-.sheet-ir { top: 104px; right: 2px; color: #e85f48; transform: rotate(3deg); }
-.sheet-nmr { bottom: 8px; left: 10px; color: #397f6d; transform: rotate(-1deg); }
-.spectro-arrow { color: var(--ink); font-size: 30px; font-weight: 700; }
+.spectrum-sheet svg { width: 100%; height: 42px; margin-top: 5px; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.sheet-ms { color: #3157ff; transform: none; }
+.sheet-ir { color: #e85f48; transform: none; }
+.sheet-nmr { color: #397f6d; transform: none; }
+.spectro-arrow {
+  width: 24px;
+  height: 24px;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.62);
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+  transform: rotate(90deg);
+}
 
 .hypothesis-card,
 .refinement-card {
   position: relative;
-  min-height: 265px;
-  padding: 18px;
+  width: 100%;
+  min-height: 0;
+  padding: 14px 15px;
+  border: 1px solid rgba(19, 32, 29, 0.2);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 24px rgba(19, 32, 29, 0.07);
+}
+
+.hypothesis-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 118px;
+  grid-template-rows: auto 1fr;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.hypothesis-card .visual-step { grid-column: 1; grid-row: 1; align-self: start; }
+.hypothesis-card strong { grid-column: 1; grid-row: 2; align-self: start; margin-top: 5px; }
+.hypothesis-card svg { grid-column: 2; grid-row: 1 / 3; width: 100%; margin: 0; }
+
+.refinement-card {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(19, 32, 29, 0.2);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.66);
-  box-shadow: 0 18px 34px rgba(19, 32, 29, 0.08);
 }
 
 .hypothesis-card strong,
-.refinement-card strong { margin-top: 7px; font-family: var(--serif); font-size: 24px; font-weight: 400; line-height: 1.05; }
-.hypothesis-card svg { width: 100%; margin: auto 0; }
-.hypothesis-card i { position: absolute; right: 14px; bottom: 12px; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: var(--red); color: white; font: 700 14px/1 var(--sans); }
-.constraint-list { display: grid; gap: 8px; margin: 28px 0 18px; }
-.constraint-list span { padding: 8px 10px; border: 1px solid rgba(19, 32, 29, 0.18); border-radius: 8px; background: rgba(200, 255, 82, 0.38); font-size: 11px; font-weight: 700; }
+.refinement-card strong { margin-top: 5px; font-family: var(--serif); font-size: 22px; font-weight: 400; line-height: 1.05; }
+.hypothesis-card i { position: absolute; left: 15px; bottom: 10px; width: 24px; height: 24px; display: grid; place-items: center; border-radius: 50%; background: var(--red); color: white; font: 700 12px/1 var(--sans); }
+.constraint-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin: 14px 0 10px; }
+.constraint-list span { padding: 6px 4px; border: 1px solid rgba(19, 32, 29, 0.18); border-radius: 7px; background: rgba(200, 255, 82, 0.38); text-align: center; font-size: 8px; font-weight: 700; line-height: 1.25; }
 .candidate-row { margin-top: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; }
-.candidate-row b { height: 38px; border: 1px dashed rgba(19, 32, 29, 0.36); border-radius: 8px; background: rgba(255, 255, 255, 0.48); }
+.candidate-row b { height: 25px; border: 1px dashed rgba(19, 32, 29, 0.36); border-radius: 7px; background: rgba(255, 255, 255, 0.48); }
 .candidate-row .candidate-selected { border: 2px solid var(--blue); background: var(--lime); }
 
-.spectro-visual figcaption,
+.spectro-visual figcaption {
+  position: static;
+  align-self: end;
+  text-align: center;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #53605b;
+}
+
 .chromatography-visual figcaption { position: absolute; right: 26px; bottom: 16px; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #53605b; }
 
 .geo-visual {
@@ -1373,20 +1425,36 @@ h1 em {
     min-height: 340px;
   }
 
-  .spectro-visual { min-height: 520px; padding: 35px 20px 42px; grid-template-columns: 1fr; grid-template-rows: 155px auto 180px auto 185px; gap: 9px; }
-  .spectra-stack { min-height: 155px; }
-  .spectrum-sheet { width: 46%; padding: 7px 9px; }
-  .sheet-ms { top: 0; }
-  .sheet-ir { top: 36px; right: 8%; }
-  .sheet-nmr { bottom: 0; left: 3%; }
+  .spectro-visual {
+    min-height: 510px;
+    padding: 22px 18px 18px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 72px 22px 138px 22px 140px auto;
+    gap: 7px;
+  }
+
+  .spectra-stack,
+  .hypothesis-card,
+  .refinement-card,
+  .spectro-visual figcaption {
+    width: 100%;
+    max-width: 520px;
+    justify-self: center;
+  }
+
+  .spectra-stack { min-height: 0; }
+  .spectrum-sheet { width: auto; padding: 7px 6px 6px; }
+  .spectrum-sheet svg { height: 34px; margin-top: 4px; }
+  .sheet-ms,
+  .sheet-ir,
+  .sheet-nmr { inset: auto; transform: none; }
   .spectro-arrow { justify-self: center; line-height: 1; transform: rotate(90deg); }
   .hypothesis-card,
-  .refinement-card { width: min(100%, 280px); min-height: 0; justify-self: center; }
-  .hypothesis-card { height: 180px; }
-  .hypothesis-card svg { position: absolute; inset: 42px 22px 8px auto; width: 130px; }
-  .refinement-card { height: 185px; }
-  .constraint-list { margin: 13px 0 8px; grid-template-columns: repeat(3, 1fr); gap: 5px; }
-  .constraint-list span { padding: 6px 4px; text-align: center; font-size: 8px; }
+  .refinement-card { width: 100%; min-height: 0; justify-self: stretch; }
+  .hypothesis-card { grid-template-columns: minmax(0, 1fr) 104px; }
+  .hypothesis-card svg { position: static; inset: auto; width: 100%; }
+  .constraint-list { margin: 12px 0 8px; grid-template-columns: repeat(3, 1fr); gap: 5px; }
+  .constraint-list span { padding: 6px 3px; text-align: center; font-size: 8px; }
 
   .visual-paper {
     padding: 18px;
@@ -1465,6 +1533,32 @@ h1 em {
 }
 
 @media (max-width: 460px) {
+  .spectro-visual {
+    padding-inline: 14px;
+  }
+
+  .hypothesis-card,
+  .refinement-card {
+    padding: 12px;
+  }
+
+  .hypothesis-card {
+    grid-template-columns: minmax(0, 1fr) 92px;
+  }
+
+  .hypothesis-card strong,
+  .refinement-card strong {
+    font-size: 20px;
+  }
+
+  .refinement-card .constraint-list {
+    margin: 10px 0 7px;
+  }
+
+  .refinement-card .candidate-row b {
+    height: 22px;
+  }
+
   .email-link {
     gap: 8px;
     font-size: clamp(17px, 5.1vw, 22px);
