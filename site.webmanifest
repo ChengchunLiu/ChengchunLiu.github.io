@@ -1,0 +1,18 @@
+{
+  "name": "Chengchun Liu — AI for Chemistry",
+  "short_name": "Chengchun Liu",
+  "description": "Research portfolio of Chengchun Liu at the intersection of artificial intelligence and chemistry.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2efe6",
+  "theme_color": "#f2efe6",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
+
