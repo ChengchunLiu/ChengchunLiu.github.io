@@ -34,6 +34,12 @@
   --shadow: 0 28px 80px rgba(30, 40, 35, 0.08);
 }
 
+html[lang="zh-Hans"],
+html[lang="zh-Hant"] {
+  --serif: "Songti SC", "Songti TC", "STSong", "Noto Serif CJK SC", "Noto Serif CJK TC", "PMingLiU", serif;
+  --sans: "Lato Local", "PingFang SC", "PingFang TC", "Noto Sans CJK SC", "Noto Sans CJK TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -142,6 +148,53 @@ svg {
   letter-spacing: 0.05em;
 }
 
+.header-actions {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.language-switcher {
+  flex: 0 0 auto;
+  padding: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.38);
+  white-space: nowrap;
+}
+
+.language-switcher button {
+  min-width: 30px;
+  height: 30px;
+  padding: 0 7px;
+  border: 0;
+  border-radius: 100px;
+  background: transparent;
+  color: var(--muted);
+  font: 700 11px/1 var(--sans);
+  cursor: pointer;
+  transition: color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+
+.language-switcher button:hover {
+  color: var(--blue);
+  background: rgba(49, 87, 255, 0.08);
+}
+
+.language-switcher button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.language-switcher button:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
 .nav-links a,
 .site-footer a {
   position: relative;
@@ -168,6 +221,41 @@ svg {
 
 .mobile-menu {
   display: none;
+}
+
+html[lang="zh-Hans"] .side-guide-name,
+html[lang="zh-Hant"] .side-guide-name {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  transform: none;
+  letter-spacing: 0.12em;
+}
+
+html[lang^="zh"] h1,
+html[lang^="zh"] .section-heading h2,
+html[lang^="zh"] .about-heading h2,
+html[lang^="zh"] .contact-section h2 {
+  letter-spacing: 0;
+}
+
+html[lang^="zh"] h1 {
+  line-height: 1.02;
+}
+
+html[lang^="zh"] h1 em {
+  margin-left: clamp(10px, 5vw, 74px);
+}
+
+html[lang^="zh"] .symbolic-stage-label,
+html[lang^="zh"] .symbolic-visual figcaption,
+html[lang^="zh"] .geo-label,
+html[lang^="zh"] .chromatography-visual figcaption {
+  letter-spacing: 0.03em;
+  text-transform: none;
+}
+
+html[lang^="zh"] .symbolic-stage-label {
+  font-size: 8px;
 }
 
 .side-guide {
@@ -1631,6 +1719,20 @@ h1 em {
     margin-left: 0;
   }
 
+  html[lang^="zh"] h1 {
+    font-size: clamp(40px, 11.5vw, 64px);
+    line-height: 1.08;
+  }
+
+  html[lang^="zh"] h1 em {
+    margin-left: 0;
+  }
+
+  html[lang^="zh"] .contact-section h2 {
+    font-size: clamp(40px, 12vw, 56px);
+    line-height: 1.05;
+  }
+
   .hero-intro {
     font-size: 18px;
   }
@@ -1859,6 +1961,16 @@ h1 em {
 }
 
 @media (max-width: 460px) {
+  .header-actions {
+    gap: 7px;
+  }
+
+  .language-switcher button {
+    min-width: 28px;
+    height: 28px;
+    padding-inline: 6px;
+  }
+
   .symbolic-visual {
     min-height: 300px;
     padding: 16px 14px 12px;

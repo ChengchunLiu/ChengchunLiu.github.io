@@ -5,38 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
+      data-i18n-content="metaDescription"
       content="Chengchun Liu is a Ph.D. candidate at Peking University working on AI for chemistry, molecular spectra, geometry refinement, and scientific agents."
     />
     <meta name="theme-color" content="#f2efe6" />
     <link rel="canonical" href="https://chengchunliu.github.io/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Chengchun Liu — AI for Chemistry" />
+    <meta property="og:title" data-i18n-content="pageTitle" content="Chengchun Liu — AI for Chemistry" />
     <meta
       property="og:description"
+      data-i18n-content="socialDescription"
       content="Research at the intersection of artificial intelligence and chemistry."
     />
     <meta property="og:url" content="https://chengchunliu.github.io/" />
     <meta property="og:site_name" content="Chengchun Liu" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" data-i18n-content="ogLocale" content="en_US" />
     <meta property="og:image" content="https://chengchunliu.github.io/assets/og-preview.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Chengchun Liu — AI for Chemistry research portfolio" />
+    <meta property="og:image:alt" data-i18n-content="socialImageAlt" content="Chengchun Liu — AI for Chemistry research portfolio" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Chengchun Liu — AI for Chemistry" />
+    <meta name="twitter:title" data-i18n-content="pageTitle" content="Chengchun Liu — AI for Chemistry" />
     <meta
       name="twitter:description"
+      data-i18n-content="socialDescription"
       content="Research at the intersection of artificial intelligence and chemistry."
     />
     <meta name="twitter:image" content="https://chengchunliu.github.io/assets/og-preview.png" />
-    <meta name="twitter:image:alt" content="Chengchun Liu — AI for Chemistry research portfolio" />
-    <title>Chengchun Liu — AI for Chemistry</title>
+    <meta name="twitter:image:alt" data-i18n-content="socialImageAlt" content="Chengchun Liu — AI for Chemistry research portfolio" />
+    <title data-i18n="pageTitle">Chengchun Liu — AI for Chemistry</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="preload" href="assets/fonts/lato-regular.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="preload" href="assets/fonts/lato-bold.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="preload" href="assets/chengchun-liu.jpg" as="image" />
-    <link rel="stylesheet" href="styles.css?v=20261012-symbolic" />
+    <link rel="stylesheet" href="styles.css?v=20261012-i18n" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -97,14 +100,21 @@
         <a href="#about" data-i18n="navAbout">About</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
-      <details class="mobile-menu">
-        <summary data-i18n="menu">Menu</summary>
-        <nav data-i18n-aria-label="mobileSections" aria-label="Mobile sections">
-          <a href="#work" data-i18n="navWork">Work</a>
-          <a href="#about" data-i18n="navAbout">About</a>
-          <a href="#contact" data-i18n="navContact">Contact</a>
-        </nav>
-      </details>
+      <div class="header-actions">
+        <div class="language-switcher" role="group" data-i18n-aria-label="languageSelector" aria-label="Language">
+          <button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+          <button type="button" data-language="zh-Hans" lang="zh-Hans" aria-label="简体中文" aria-pressed="false">简</button>
+          <button type="button" data-language="zh-Hant" lang="zh-Hant" aria-label="繁體中文" aria-pressed="false">繁</button>
+        </div>
+        <details class="mobile-menu">
+          <summary data-i18n="menu">Menu</summary>
+          <nav data-i18n-aria-label="mobileSections" aria-label="Mobile sections">
+            <a href="#work" data-i18n="navWork">Work</a>
+            <a href="#about" data-i18n="navAbout">About</a>
+            <a href="#contact" data-i18n="navContact">Contact</a>
+          </nav>
+        </details>
+      </div>
     </header>
 
     <main id="main">
@@ -112,7 +122,7 @@
         <div class="hero-orbit orbit-one" aria-hidden="true"></div>
         <div class="hero-orbit orbit-two" aria-hidden="true"></div>
         <div class="hero-copy reveal">
-          <p class="eyebrow">Chengchun Liu</p>
+          <p class="eyebrow" lang="en">Chengchun Liu</p>
           <h1>
             <span data-i18n="heroLine1">AI for chemistry.</span>
             <em data-i18n="heroLine2">Built to reason.</em>
@@ -176,9 +186,9 @@
             />
           </div>
           <div class="profile-meta">
-            <p class="profile-name">Chengchun Liu</p>
-            <p class="profile-role">Ph.D. candidate</p>
-            <p class="profile-affiliation">Peking University</p>
+            <p class="profile-name" lang="en">Chengchun Liu</p>
+            <p class="profile-role" data-i18n="profileRole">Ph.D. candidate</p>
+            <p class="profile-affiliation" data-i18n="pku">Peking University</p>
           </div>
         </aside>
 
@@ -205,11 +215,11 @@
 
         <article class="work-card work-card-featured accent-blue reveal">
           <div class="work-content">
-            <div class="work-kicker">
+            <div class="work-kicker" lang="en">
               <span>Angewandte Chemie International Edition · 2026</span>
             </div>
-            <h3 id="work-spectromol">Hypothesis-and-Refinement Learning of Organic Structures From Multimodal Spectroscopic Data</h3>
-            <p class="work-authors">Chengchun Liu<sup>†</sup>, Zhiyuan Yan<sup>†</sup>, Li Yuan, Hao Li, Boxuan Zhao, Yonghong Tian, Bartosz A. Grzybowski, and Fanyang Mo</p>
+            <h3 id="work-spectromol" lang="en">Hypothesis-and-Refinement Learning of Organic Structures From Multimodal Spectroscopic Data</h3>
+            <p class="work-authors" lang="en">Chengchun Liu<sup>†</sup>, Zhiyuan Yan<sup>†</sup>, Li Yuan, Hao Li, Boxuan Zhao, Yonghong Tian, Bartosz A. Grzybowski, and Fanyang Mo</p>
             <p data-i18n="spectroDesc">
               A hypothesis-and-refinement system that proposes molecular structures from multimodal spectra,
               then repairs them with formula-, exact-mass-, and unsaturation-aware molecular generation.
@@ -265,17 +275,17 @@
               </div>
               <div class="candidate-row" aria-hidden="true"><b></b><b></b><b class="candidate-selected"></b></div>
             </div>
-            <figcaption>Spectra → hypothesis → refinement</figcaption>
+            <figcaption data-i18n="spectroCaption">Spectra → hypothesis → refinement</figcaption>
           </figure>
         </article>
 
         <article class="work-card work-card-featured work-card-reverse accent-lime reveal">
           <div class="work-content">
-            <div class="work-kicker">
+            <div class="work-kicker" lang="en">
               <span>Journal of Chemical Theory and Computation · 2026</span>
             </div>
-            <h3 id="work-geoopt">A Cross-Domain Graph Learning Protocol for Single-Step Molecular Geometry Refinement</h3>
-            <p class="work-authors">Chengchun Liu, Wendi Cai, Boxuan Zhao, and Fanyang Mo</p>
+            <h3 id="work-geoopt" lang="en">A Cross-Domain Graph Learning Protocol for Single-Step Molecular Geometry Refinement</h3>
+            <p class="work-authors" lang="en">Chengchun Liu, Wendi Cai, Boxuan Zhao, and Fanyang Mo</p>
             <p data-i18n="geoDesc">
               GeoOpt-Net uses SE(3)-equivariant, multifidelity learning to map inexpensive force-field conformers
               directly toward DFT-quality molecular geometries in one deterministic forward pass.
@@ -344,11 +354,12 @@
           <article class="work-card work-card-compact accent-violet reveal">
             <figure
               class="work-visual symbolic-visual"
+              data-i18n-aria-label="symbolicVisualLabel"
               aria-label="An abstract diagram showing complex variables combined through hierarchical symbolic learning into an interpretable equation"
             >
               <div class="symbolic-pipeline" aria-hidden="true">
                 <div class="symbolic-panel symbolic-system">
-                  <span class="symbolic-stage-label">Multi-variable system</span>
+                  <span class="symbolic-stage-label" data-i18n="symbolicSystem">Multi-variable system</span>
                   <div class="symbolic-variable-map">
                     <svg viewBox="0 0 140 82">
                       <path d="M18 22 63 13l54 18M18 22l25 42 40 5 34-38M63 13l20 56M43 64l74-33" />
@@ -360,7 +371,7 @@
                 <span class="symbolic-arrow">→</span>
 
                 <div class="symbolic-panel symbolic-hierarchy">
-                  <span class="symbolic-stage-label">Hierarchical discovery</span>
+                  <span class="symbolic-stage-label" data-i18n="symbolicDiscovery">Hierarchical discovery</span>
                   <div class="symbolic-level symbolic-level-source"><b>x₁</b><b>x₂</b><b>x₃</b><b>x₄</b></div>
                   <span class="symbolic-level-arrow">↓</span>
                   <div class="symbolic-level symbolic-level-combined"><b>x₁x₂</b><b>sin x₃</b></div>
@@ -371,20 +382,20 @@
                 <span class="symbolic-down-arrow">↓</span>
 
                 <div class="symbolic-law">
-                  <span class="symbolic-stage-label">Interpretable law</span>
+                  <span class="symbolic-stage-label" data-i18n="symbolicLaw">Interpretable law</span>
                   <strong>ŷ = αΦ₁ + βΦ₂</strong>
                   <div class="symbolic-contributions"><i></i><i></i><i></i></div>
-                  <small>compact · explicit · interpretable</small>
+                  <small data-i18n="symbolicQualities">compact · explicit · interpretable</small>
                 </div>
               </div>
-              <figcaption>Many variables → hierarchical discovery → compact equation</figcaption>
+              <figcaption data-i18n="symbolicCaption">Many variables → hierarchical discovery → compact equation</figcaption>
             </figure>
             <div class="work-content">
-              <div class="work-kicker">
+              <div class="work-kicker" lang="en">
                 <span>Advanced Science · 2026</span>
               </div>
-              <h3 id="work-uhsr">Unsupervised Hierarchical Symbolic Regression for Interpretable Property Modeling in Complex Multi-Variable Systems</h3>
-              <p class="work-authors">Siyu Lou<sup>†</sup>, Chengchun Liu<sup>†</sup>, Dongxiao Zhang, Yuntian Chen, and Fanyang Mo</p>
+              <h3 id="work-uhsr" lang="en">Unsupervised Hierarchical Symbolic Regression for Interpretable Property Modeling in Complex Multi-Variable Systems</h3>
+              <p class="work-authors" lang="en">Siyu Lou<sup>†</sup>, Chengchun Liu<sup>†</sup>, Dongxiao Zhang, Yuntian Chen, and Fanyang Mo</p>
               <p data-i18n="symbolicDesc">
                 A layered symbolic-learning framework that turns complex multivariable relationships into compact,
                 chemically interpretable equations.
@@ -412,16 +423,16 @@
               </div>
               <div class="scale-node scale-system">
                 <div class="node-icon system-icon" aria-hidden="true"><i></i><i></i></div>
-                <strong>Closed-loop</strong><small>AI + automation</small>
+                <strong data-i18n="scaleClosedLoop">Closed-loop</strong><small data-i18n="scaleAutomation">AI + automation</small>
               </div>
               <figcaption data-i18n="chromCaption">From molecular interactions to closed-loop separation</figcaption>
             </figure>
             <div class="work-content">
-              <div class="work-kicker">
+              <div class="work-kicker" lang="en">
                 <span>Accounts of Chemical Research · 2026</span>
               </div>
-              <h3 id="work-chromatography">Automation and AI-Powered Prediction in Chromatographic Separation</h3>
-              <p class="work-authors">Chengchun Liu and Fanyang Mo</p>
+              <h3 id="work-chromatography" lang="en">Automation and AI-Powered Prediction in Chromatographic Separation</h3>
+              <p class="work-authors" lang="en">Chengchun Liu and Fanyang Mo</p>
               <p data-i18n="chromDesc">
                 A research perspective connecting automated experimentation, retention prediction,
                 condition optimization, and closed-loop chromatographic separation.
@@ -446,17 +457,17 @@
                   stroke-linejoin="round"
                 />
                 <line x1="35" y1="238" x2="570" y2="238" stroke="currentColor" stroke-width="2" opacity="0.45" />
-                <text x="90" y="57" class="spectrum-label">functional-group region</text>
-                <text x="478" y="260" class="spectrum-axis">wavenumber</text>
+                <text x="90" y="57" class="spectrum-label" data-i18n="functionalRegion">functional-group region</text>
+                <text x="478" y="260" class="spectrum-axis" data-i18n="wavenumber">wavenumber</text>
               </svg>
               <div class="neighbor-chip" data-i18n="neighborChip">Structural neighborhood</div>
             </figure>
             <div class="work-content">
-              <div class="work-kicker">
+              <div class="work-kicker" lang="en">
                 <span>Analytical Chemistry · 2024</span>
               </div>
-              <h3 id="work-infrared">Infrared Spectra Prediction for Functional Group Region Utilizing a Machine Learning Approach With Structural Neighboring Mechanism</h3>
-              <p class="work-authors">Chengchun Liu, Ruqiang Zou, and Fanyang Mo</p>
+              <h3 id="work-infrared" lang="en">Infrared Spectra Prediction for Functional Group Region Utilizing a Machine Learning Approach With Structural Neighboring Mechanism</h3>
+              <p class="work-authors" lang="en">Chengchun Liu, Ruqiang Zou, and Fanyang Mo</p>
               <p data-i18n="irDesc">
                 A functional-group-centered learning strategy that uses local structural context to improve
                 the accuracy, robustness, and interpretability of infrared-spectrum prediction.
@@ -474,7 +485,7 @@
 
         </div>
 
-        <p class="author-note reveal" data-i18n="equalContribution"><sup>†</sup> These authors contributed equally.</p>
+        <p class="author-note reveal"><sup>†</sup> <span data-i18n="equalContribution">These authors contributed equally.</span></p>
 
         <div class="scholar-callout reveal">
           <p>
@@ -505,7 +516,7 @@
           <div class="timeline reveal" data-i18n-aria-label="educationExperience" aria-label="Education and experience">
             <div class="timeline-item">
               <time data-i18n="seedPeriod">Aug 2026 — Present</time>
-              <h3>ByteDance Seed</h3>
+              <h3 data-i18n="seedOrg">ByteDance Seed</h3>
               <p data-i18n="seedRole">Seed Edge intern · STEM Scientist Program</p>
             </div>
             <div class="timeline-item">
@@ -535,6 +546,7 @@
           <a
             class="email-link reveal"
             href="mailto:liuchengchun@stu.pku.edu.cn"
+            data-i18n-aria-label="emailLinkLabel"
             aria-label="Email Chengchun Liu at liuchengchun@stu.pku.edu.cn"
           >
             <span class="email-icon" aria-hidden="true">
@@ -543,7 +555,7 @@
                 <path d="m5 8 7 5 7-5" />
               </svg>
             </span>
-            <span class="email-address">liuchengchun@stu.pku.edu.cn</span>
+            <span class="email-address" lang="en">liuchengchun@stu.pku.edu.cn</span>
             <span class="email-arrow" aria-hidden="true">↗</span>
           </a>
         </div>
@@ -556,6 +568,6 @@
       <a href="#top"><span data-i18n="backTop">Back to top</span> ↑</a>
     </footer>
 
-    <script src="script.js?v=20261012-symbolic"></script>
+    <script src="script.js?v=20261012-i18n"></script>
   </body>
 </html>
