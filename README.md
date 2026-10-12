@@ -1,6 +1,6 @@
 # Chengchun Liu — Personal Portfolio
 
-A lightweight bilingual research portfolio designed for the personal GitHub Pages address `https://chengchunliu.github.io/`.
+A lightweight English-language research portfolio designed for the personal GitHub Pages address `https://chengchunliu.github.io/`.
 
 ## Preview locally
 

@@ -4,7 +4,7 @@ Target public address: `https://chengchunliu.github.io/`
 
 ## Public information included
 
-- Name: Chengchun Liu / 刘丞军
+- Name: Chengchun Liu
 - Portrait photograph
 - Peking University affiliation and research training
 - ByteDance Seed internship description
@@ -29,5 +29,5 @@ Target public address: `https://chengchunliu.github.io/`
 2. Push the local `main` branch.
 3. In repository **Settings → Pages**, select **GitHub Actions** as the source if it is not selected automatically.
 4. Wait for the **Deploy portfolio to GitHub Pages** workflow to finish.
-5. Verify the live site, the Chinese/English switch, DOI/code links, mobile layout, and social preview.
+5. Verify the live site, left-side section navigation, DOI/code links, mobile layout, and social preview.
 

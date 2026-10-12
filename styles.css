@@ -165,36 +165,11 @@ svg {
   right: 0;
 }
 
-.language-toggle {
-  justify-self: end;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  min-width: 72px;
-  min-height: 38px;
-  padding: 7px 12px;
-  border: 1px solid var(--line);
-  border-radius: 100px;
-  background: transparent;
-  color: var(--ink);
-  font: 700 13px/1 var(--sans);
-  cursor: pointer;
-  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
-}
-
-.language-toggle:hover,
-.language-toggle:focus-visible {
-  background: var(--ink);
-  border-color: var(--ink);
-  color: var(--paper);
-}
-
-.language-other,
-.language-divider {
-  opacity: 0.45;
-}
-
 .mobile-menu {
+  display: none;
+}
+
+.side-guide {
   display: none;
 }
 
@@ -314,7 +289,7 @@ h1 em {
 .profile-card {
   position: relative;
   z-index: 2;
-  width: min(92%, 370px);
+  width: min(82%, 320px);
   align-self: center;
   justify-self: center;
   padding: 14px;
@@ -1070,6 +1045,75 @@ h1 em {
   transform: translateY(0) rotate(1.8deg);
 }
 
+@media (min-width: 1240px) {
+  :root {
+    --page: min(1300px, calc(100vw - 124px));
+  }
+
+  body {
+    padding-left: 60px;
+  }
+
+  .side-guide {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 120;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid var(--line);
+    background: rgba(242, 239, 230, 0.9);
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+  }
+
+  .side-guide a {
+    position: relative;
+    min-height: 86px;
+    display: grid;
+    place-items: center;
+    border-right: 3px solid transparent;
+    color: var(--muted);
+    transition: color 180ms ease, background 180ms ease, border-color 180ms ease;
+  }
+
+  .side-guide a:hover,
+  .side-guide a:focus-visible,
+  .side-guide a.is-active {
+    border-right-color: var(--blue);
+    background: rgba(49, 87, 255, 0.07);
+    color: var(--ink);
+  }
+
+  .side-guide a:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: -5px;
+  }
+
+  .side-guide-number {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    opacity: 0.58;
+  }
+
+  .side-guide-name {
+    display: block;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+}
+
 @media (max-width: 1100px) {
   :root {
     --page: min(100% - 42px, 980px);
@@ -1121,11 +1165,6 @@ h1 em {
   }
 }
 
-@media (min-width: 801px) {
-  html[lang^="zh"] h1 { font-size: clamp(64px, 7.1vw, 112px); }
-  html[lang^="zh"] h1 > span { white-space: nowrap; }
-}
-
 @media (max-width: 800px) {
   :root {
     --page: calc(100% - 32px);
@@ -1139,7 +1178,7 @@ h1 em {
   .site-header {
     height: 70px;
     padding: 0 16px;
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: 1fr auto;
     gap: 8px;
   }
 
@@ -1223,7 +1262,7 @@ h1 em {
   }
 
   .profile-card {
-    max-width: 370px;
+    max-width: 320px;
     justify-self: center;
     transform: none;
   }

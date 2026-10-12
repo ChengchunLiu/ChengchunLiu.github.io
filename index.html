@@ -18,7 +18,6 @@
     <meta property="og:url" content="https://chengchunliu.github.io/" />
     <meta property="og:site_name" content="Chengchun Liu" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:locale:alternate" content="zh_CN" />
     <meta property="og:image" content="https://chengchunliu.github.io/assets/og-preview.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -43,7 +42,6 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Chengchun Liu",
-        "alternateName": "刘丞军",
         "url": "https://chengchunliu.github.io/",
         "image": "https://chengchunliu.github.io/assets/chengchun-liu.jpg",
         "affiliation": {
@@ -71,6 +69,25 @@
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
+    <nav class="side-guide" data-i18n-aria-label="sectionGuide" aria-label="Section navigation">
+      <a class="is-active" href="#top" data-guide-target="top" aria-current="location">
+        <span class="side-guide-number" aria-hidden="true">00</span>
+        <span class="side-guide-name" data-i18n="navIntro">Intro</span>
+      </a>
+      <a href="#work" data-guide-target="work">
+        <span class="side-guide-number" aria-hidden="true">01</span>
+        <span class="side-guide-name" data-i18n="navWork">Work</span>
+      </a>
+      <a href="#about" data-guide-target="about">
+        <span class="side-guide-number" aria-hidden="true">02</span>
+        <span class="side-guide-name" data-i18n="navAbout">About</span>
+      </a>
+      <a href="#contact" data-guide-target="contact">
+        <span class="side-guide-number" aria-hidden="true">03</span>
+        <span class="side-guide-name" data-i18n="navContact">Contact</span>
+      </a>
+    </nav>
+
     <header class="site-header" data-i18n-aria-label="primaryNav" aria-label="Primary navigation">
       <a class="monogram" href="#top" data-i18n-aria-label="homeLabel" aria-label="Chengchun Liu, home">
         <span>CCL</span><i aria-hidden="true"></i>
@@ -80,11 +97,6 @@
         <a href="#about" data-i18n="navAbout">About</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
-      <button class="language-toggle" type="button" aria-label="切换为中文" aria-pressed="false">
-        <span class="language-current">EN</span>
-        <span class="language-divider">/</span>
-        <span class="language-other">中</span>
-      </button>
       <details class="mobile-menu">
         <summary data-i18n="menu">Menu</summary>
         <nav data-i18n-aria-label="mobileSections" aria-label="Mobile sections">
@@ -100,7 +112,7 @@
         <div class="hero-orbit orbit-one" aria-hidden="true"></div>
         <div class="hero-orbit orbit-two" aria-hidden="true"></div>
         <div class="hero-copy reveal">
-          <p class="eyebrow">Chengchun Liu <span>·</span> 刘丞军</p>
+          <p class="eyebrow">Chengchun Liu</p>
           <h1>
             <span data-i18n="heroLine1">AI for chemistry.</span>
             <em data-i18n="heroLine2">Built to reason.</em>
