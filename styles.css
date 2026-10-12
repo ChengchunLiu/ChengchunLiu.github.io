@@ -379,6 +379,73 @@ h1 em {
   border-bottom: 1px solid var(--ink);
 }
 
+.platform-link {
+  gap: 7px;
+  padding-inline: 4px;
+}
+
+.platform-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.platform-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(19, 32, 29, 0.16);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.52);
+  color: var(--ink);
+  font: 700 8px/1 var(--sans);
+  letter-spacing: -0.04em;
+  transition: color 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.platform-icon svg {
+  width: 13px;
+  height: 13px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.platform-icon-scholar {
+  color: var(--blue);
+  background: rgba(49, 87, 255, 0.08);
+}
+
+.platform-icon-github {
+  background: rgba(19, 32, 29, 0.07);
+}
+
+.platform-icon-orcid {
+  background: rgba(200, 255, 82, 0.38);
+}
+
+.platform-icon-linkedin {
+  color: #2457a6;
+  background: rgba(49, 87, 255, 0.08);
+}
+
+.platform-link:hover .platform-icon,
+.platform-link:focus-visible .platform-icon {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: white;
+}
+
+.platform-link:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+
 .profile-card {
   position: relative;
   z-index: 2;
