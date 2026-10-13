@@ -1,0 +1,258 @@
+[
+  {
+    "slug": "spectromol-multimodal-structure-elucidation",
+    "shortName": "SpectroMol",
+    "title": "Hypothesis-and-Refinement Learning of Organic Structures From Multimodal Spectroscopic Data",
+    "journal": "Angewandte Chemie International Edition",
+    "year": "2026",
+    "doi": "10.1002/anie.9212238",
+    "datePublished": "2026-09-11",
+    "articleNumber": "e9212238",
+    "authors": [
+      "Chengchun Liu",
+      "Zhiyuan Yan",
+      "Li Yuan",
+      "Hao Li",
+      "Boxuan Zhao",
+      "Yonghong Tian",
+      "Bartosz A. Grzybowski",
+      "Fanyang Mo"
+    ],
+    "equalContributors": ["Chengchun Liu", "Zhiyuan Yan"],
+    "keywords": [
+      "AI for chemistry",
+      "automated structure elucidation",
+      "multimodal spectroscopy",
+      "NMR spectroscopy",
+      "infrared spectroscopy",
+      "mass spectrometry",
+      "molecular generation",
+      "chemical constraints"
+    ],
+    "locales": {
+      "en": {
+        "seoTitle": "SpectroMol: Multimodal Structure Elucidation | Chengchun Liu",
+        "description": "A hypothesis-and-refinement framework for inferring organic molecular structures from multimodal spectra using chemical and mass-based constraints.",
+        "summary": "A hypothesis-and-refinement system that proposes molecular structures from multimodal spectra, then repairs them with formula-, exact-mass-, and unsaturation-aware molecular generation.",
+        "problem": "Molecular structure elucidation is an underdetermined inverse problem: each spectrum contains only partial evidence, while many structures can appear plausible.",
+        "approach": "The workflow first proposes candidate structures from complementary spectral evidence, then refines them using explicit molecular-formula, exact-mass, and unsaturation constraints.",
+        "why": "Combining multimodal evidence with explicit chemical constraints makes automated structure elucidation more chemically grounded and easier to inspect."
+      },
+      "zh-Hans": {
+        "seoTitle": "多模态光谱分子结构解析｜刘丞军",
+        "description": "通过假设—精修框架，结合多模态光谱、分子式、精确质量与不饱和度约束推断有机分子结构。",
+        "summary": "一个“假设—精修”系统：先依据多模态光谱提出分子结构假设，再以同时考虑分子式、精确质量与不饱和度的分子生成模型加以修正。",
+        "problem": "分子结构解析是一个欠定的逆问题：每种光谱只提供部分证据，而多个不同结构都可能看似合理。",
+        "approach": "该流程先综合互补光谱证据提出候选结构，再利用分子式、精确质量和不饱和度等显式化学约束进行精修。",
+        "why": "将多模态证据与显式化学约束结合，可使自动结构解析更符合化学规律，也更便于检查和解释。"
+      },
+      "zh-Hant": {
+        "seoTitle": "多模態光譜分子結構解析｜劉丞軍",
+        "description": "透過假設—精修框架，結合多模態光譜、分子式、精確質量與不飽和度約束推斷有機分子結構。",
+        "summary": "一套「假設—精修」系統：先依據多模態光譜提出分子結構假設，再以同時納入分子式、精確質量與不飽和度的分子生成模型加以修正。",
+        "problem": "分子結構解析是一個欠定的逆問題：每種光譜只提供部分證據，而多個不同結構都可能看似合理。",
+        "approach": "此流程先整合互補光譜證據提出候選結構，再利用分子式、精確質量和不飽和度等顯式化學約束進行精修。",
+        "why": "將多模態證據與顯式化學約束結合，可使自動結構解析更符合化學規律，也更便於檢查與解釋。"
+      }
+    }
+  },
+  {
+    "slug": "geoopt-net",
+    "shortName": "GeoOpt-Net",
+    "title": "A Cross-Domain Graph Learning Protocol for Single-Step Molecular Geometry Refinement",
+    "journal": "Journal of Chemical Theory and Computation",
+    "year": "2026",
+    "doi": "10.1021/acs.jctc.6c01080",
+    "datePublished": "2026-07-12",
+    "volume": "22",
+    "issue": "14",
+    "pages": "7469–7479",
+    "code": "https://github.com/ChengchunLiu/GeoOpt_Net",
+    "authors": ["Chengchun Liu", "Wendi Cai", "Boxuan Zhao", "Fanyang Mo"],
+    "equalContributors": [],
+    "keywords": [
+      "GeoOpt-Net",
+      "molecular geometry refinement",
+      "geometry optimization",
+      "SE(3)-equivariant graph neural network",
+      "multifidelity learning",
+      "force-field conformer",
+      "DFT geometry",
+      "quantum chemistry"
+    ],
+    "locales": {
+      "en": {
+        "seoTitle": "GeoOpt-Net: Single-Step Molecular Geometry Refinement | Chengchun Liu",
+        "description": "GeoOpt-Net uses SE(3)-equivariant, multifidelity graph learning to refine low-cost molecular conformers toward DFT-quality geometries in one step.",
+        "summary": "GeoOpt-Net uses SE(3)-equivariant, multifidelity learning to map inexpensive force-field conformers directly toward DFT-quality molecular geometries in one deterministic forward pass.",
+        "problem": "Reliable quantum-chemical calculations require accurate molecular geometries, but iterative DFT optimization becomes costly when many molecules must be processed.",
+        "approach": "An SE(3)-equivariant graph architecture and multifidelity learning map an inexpensive initial conformer toward a target quantum-chemical geometry in one deterministic forward pass.",
+        "why": "A direct refinement step can reduce the geometry-preparation burden in large-scale quantum-chemical workflows while respecting the geometric symmetries of the task."
+      },
+      "zh-Hans": {
+        "seoTitle": "GeoOpt-Net：单步分子几何精修｜刘丞军",
+        "description": "GeoOpt-Net 采用 SE(3) 等变多保真图学习，将低成本力场构象单步精修至接近 DFT 级分子几何结构。",
+        "summary": "GeoOpt-Net 采用 SE(3) 等变多保真学习，在一次确定性前向传播中，将低成本生成的力场构象直接映射为具 DFT 级精度的分子几何结构。",
+        "problem": "可靠的量子化学计算需要准确的分子几何结构，但在大规模分子处理中，迭代式 DFT 几何优化成本较高。",
+        "approach": "该方法使用 SE(3) 等变图架构和多保真学习，在一次确定性前向传播中将低成本初始构象映射到目标量子化学几何结构。",
+        "why": "直接精修可降低大规模量子化学工作流中的几何准备负担，同时保留任务所要求的几何对称性。"
+      },
+      "zh-Hant": {
+        "seoTitle": "GeoOpt-Net：單步分子幾何精修｜劉丞軍",
+        "description": "GeoOpt-Net 採用 SE(3) 等變多保真圖學習，將低成本力場構象單步精修至接近 DFT 級分子幾何結構。",
+        "summary": "GeoOpt-Net 採用 SE(3) 等變多保真學習，在一次確定性的前向傳播中，將低成本生成的力場構象直接映射為具 DFT 級精度的分子幾何結構。",
+        "problem": "可靠的量子化學計算需要準確的分子幾何結構，但在大規模分子處理中，迭代式 DFT 幾何最佳化成本較高。",
+        "approach": "此方法使用 SE(3) 等變圖架構和多保真學習，在一次確定性的前向傳播中將低成本初始構象映射到目標量子化學幾何結構。",
+        "why": "直接精修可降低大規模量子化學工作流程中的幾何準備負擔，同時保留任務所要求的幾何對稱性。"
+      }
+    }
+  },
+  {
+    "slug": "uhsr-symbolic-regression",
+    "shortName": "UHSR",
+    "title": "Unsupervised Hierarchical Symbolic Regression for Interpretable Property Modeling in Complex Multi-Variable Systems",
+    "journal": "Advanced Science",
+    "year": "2026",
+    "doi": "10.1002/advs.202521200",
+    "datePublished": "2026-01-07",
+    "volume": "13",
+    "issue": "19",
+    "articleNumber": "e21200",
+    "authors": ["Siyu Lou", "Chengchun Liu", "Dongxiao Zhang", "Yuntian Chen", "Fanyang Mo"],
+    "equalContributors": ["Siyu Lou", "Chengchun Liu"],
+    "keywords": [
+      "unsupervised hierarchical symbolic regression",
+      "UHSR",
+      "interpretable machine learning",
+      "explainable AI",
+      "molecular property modeling",
+      "multivariable systems",
+      "chemical equations"
+    ],
+    "locales": {
+      "en": {
+        "seoTitle": "UHSR: Interpretable Symbolic Regression for Chemistry | Chengchun Liu",
+        "description": "An unsupervised hierarchical symbolic regression framework for deriving compact, chemically interpretable relationships in complex multivariable systems.",
+        "summary": "A layered symbolic-learning framework that turns complex multivariable relationships into compact, chemically interpretable equations.",
+        "problem": "Flexible predictive models can capture complex chemical relationships, but they often obscure which variables and combinations drive a prediction.",
+        "approach": "The framework builds symbolic relationships hierarchically, combining variables into intermediate expressions and then into a compact explicit equation.",
+        "why": "Explicit equations can be inspected, challenged, and connected to chemical reasoning in ways that opaque predictors cannot, supporting both prediction and hypothesis formation."
+      },
+      "zh-Hans": {
+        "seoTitle": "UHSR：面向化学的可解释符号回归｜刘丞军",
+        "description": "一种无监督分层符号回归框架，用于从复杂多变量系统中导出紧凑且具有化学可解释性的关系。",
+        "summary": "一种分层符号学习框架，将复杂的多变量关系转化为紧凑且具化学可解释性的方程。",
+        "problem": "灵活的预测模型能够捕捉复杂化学关系，但往往难以说明哪些变量及其组合真正驱动预测。",
+        "approach": "该框架以分层方式构建符号关系，先将变量组合成中间表达式，再进一步形成紧凑的显式方程。",
+        "why": "显式方程能够被检查、质疑并与化学推理联系起来，可同时支持预测与科学假设形成。"
+      },
+      "zh-Hant": {
+        "seoTitle": "UHSR：面向化學的可解釋符號回歸｜劉丞軍",
+        "description": "一種無監督分層符號回歸框架，用於從複雜多變數系統中導出簡潔且具有化學可解釋性的關係。",
+        "summary": "一種分層符號學習框架，將複雜的多變數關係轉化為簡潔且具化學可解釋性的方程式。",
+        "problem": "靈活的預測模型能夠捕捉複雜化學關係，但往往難以說明哪些變數及其組合真正驅動預測。",
+        "approach": "此框架以分層方式建構符號關係，先將變數組合成中間表達式，再進一步形成簡潔的顯式方程式。",
+        "why": "顯式方程式能夠被檢查、質疑並與化學推理連結起來，可同時支援預測與科學假設形成。"
+      }
+    }
+  },
+  {
+    "slug": "ai-chromatography",
+    "shortName": "AI Chromatography",
+    "title": "Automation and AI-Powered Prediction in Chromatographic Separation",
+    "journal": "Accounts of Chemical Research",
+    "year": "2026",
+    "doi": "10.1021/acs.accounts.5c00677",
+    "datePublished": "2025-12-22",
+    "volume": "59",
+    "issue": "1",
+    "pages": "138–150",
+    "authors": ["Chengchun Liu", "Fanyang Mo"],
+    "equalContributors": [],
+    "keywords": [
+      "chromatographic separation",
+      "chromatography automation",
+      "retention prediction",
+      "condition optimization",
+      "closed-loop experimentation",
+      "autonomous chemistry",
+      "AI for chemistry"
+    ],
+    "locales": {
+      "en": {
+        "seoTitle": "Automation and AI for Chromatographic Separation | Chengchun Liu",
+        "description": "A perspective on how automation, retention prediction, condition optimization, and closed-loop experimentation can advance chromatographic separation.",
+        "summary": "A research perspective connecting automated experimentation, retention prediction, condition optimization, and closed-loop chromatographic separation.",
+        "problem": "Separation development connects molecular interactions, stationary phases, instruments, and operating conditions, yet these layers are often optimized separately through iterative experimentation.",
+        "approach": "The perspective organizes the field across scales, linking automated experiments, retention prediction, condition optimization, and closed-loop decision making.",
+        "why": "It shows how predictive models and experimental automation can be treated as one connected workflow rather than isolated tools."
+      },
+      "zh-Hans": {
+        "seoTitle": "色谱分离自动化与人工智能｜刘丞军",
+        "description": "探讨自动化实验、保留行为预测、条件优化和闭环实验如何推动色谱分离发展的研究展望。",
+        "summary": "一篇串联自动化实验、保留行为预测、条件优化与闭环色谱分离的研究展望。",
+        "problem": "分离方法开发涉及分子相互作用、固定相、仪器和操作条件，但这些层级常通过反复实验被分别优化。",
+        "approach": "该展望从多尺度角度组织相关研究，将自动化实验、保留行为预测、条件优化和闭环决策联系起来。",
+        "why": "它展示了如何将预测模型和实验自动化视为相互连接的完整工作流，而非彼此独立的工具。"
+      },
+      "zh-Hant": {
+        "seoTitle": "層析分離自動化與人工智慧｜劉丞軍",
+        "description": "探討自動化實驗、保留行為預測、條件最佳化和閉環實驗如何推動層析分離發展的研究展望。",
+        "summary": "一篇串聯自動化實驗、保留行為預測、條件最佳化與閉環層析分離的研究展望。",
+        "problem": "分離方法開發涉及分子交互作用、固定相、儀器和操作條件，但這些層級常透過反覆實驗被分別最佳化。",
+        "approach": "此展望從多尺度角度組織相關研究，將自動化實驗、保留行為預測、條件最佳化和閉環決策連結起來。",
+        "why": "它展示了如何將預測模型和實驗自動化視為相互連結的完整工作流程，而非彼此獨立的工具。"
+      }
+    }
+  },
+  {
+    "slug": "infrared-spectrum-prediction",
+    "shortName": "IR Prediction",
+    "title": "Infrared Spectra Prediction for Functional Group Region Utilizing a Machine Learning Approach With Structural Neighboring Mechanism",
+    "journal": "Analytical Chemistry",
+    "year": "2024",
+    "doi": "10.1021/acs.analchem.4c01972",
+    "datePublished": "2024-09-19",
+    "volume": "96",
+    "issue": "39",
+    "pages": "15550–15562",
+    "code": "https://github.com/ChengchunLiu/IR-DIAZO-KETONE",
+    "authors": ["Chengchun Liu", "Ruqiang Zou", "Fanyang Mo"],
+    "equalContributors": [],
+    "keywords": [
+      "infrared spectrum prediction",
+      "functional-group region",
+      "structural neighboring mechanism",
+      "local chemical environment",
+      "molecular spectroscopy",
+      "machine learning",
+      "interpretable machine learning"
+    ],
+    "locales": {
+      "en": {
+        "seoTitle": "Machine Learning for Functional-Group IR Prediction | Chengchun Liu",
+        "description": "A machine-learning approach to functional-group infrared prediction that represents the local structural neighborhood around the target group.",
+        "summary": "A functional-group-centered learning strategy that uses local structural context to improve the accuracy, robustness, and interpretability of infrared-spectrum prediction.",
+        "problem": "A functional group’s infrared response depends not only on its identity but also on the surrounding molecular environment, making context-aware prediction important.",
+        "approach": "The method represents the structural neighborhood around a target functional group and uses that local chemical context in a machine-learning prediction workflow.",
+        "why": "Centering the representation on chemically meaningful neighborhoods connects spectral prediction more directly to the structural context chemists use to interpret IR signals."
+      },
+      "zh-Hans": {
+        "seoTitle": "官能团红外光谱机器学习预测｜刘丞军",
+        "description": "一种面向官能团红外光谱预测的机器学习方法，显式表示目标官能团周围的局部结构邻域。",
+        "summary": "一种以官能团为中心的学习策略，利用局部结构信息，提高红外光谱预测的准确性、稳健性与可解释性。",
+        "problem": "官能团的红外响应不仅取决于其自身类别，也受到周围分子环境影响，因此预测方法需要考虑局部结构语境。",
+        "approach": "该方法表示目标官能团周围的结构邻域，并将这一局部化学信息用于机器学习预测流程。",
+        "why": "以具有化学意义的结构邻域为中心，可使光谱预测更直接地对应化学家解释红外信号时使用的结构信息。"
+      },
+      "zh-Hant": {
+        "seoTitle": "官能基紅外光譜機器學習預測｜劉丞軍",
+        "description": "一種面向官能基紅外光譜預測的機器學習方法，顯式表示目標官能基周圍的局部結構鄰域。",
+        "summary": "一種以官能基為核心的學習策略，利用局部結構資訊，提升紅外光譜預測的準確性、穩健性與可解釋性。",
+        "problem": "官能基的紅外響應不僅取決於其自身類別，也受到周圍分子環境影響，因此預測方法需要考慮局部結構脈絡。",
+        "approach": "此方法表示目標官能基周圍的結構鄰域，並將這項局部化學資訊用於機器學習預測流程。",
+        "why": "以具有化學意義的結構鄰域為核心，可使光譜預測更直接地對應化學家解釋紅外訊號時使用的結構資訊。"
+      }
+    }
+  }
+]

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="{{HTML_LANG}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{PAGE_TITLE}}</title>
+    <meta name="description" content="{{META_DESCRIPTION}}" />
+    <meta name="author" content="Chengchun Liu" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#f2efe6" />
+
+    <link rel="canonical" href="{{CANONICAL_URL}}" />
+    {{HREFLANG_LINKS}}
+
+    {{OPEN_GRAPH_TAGS}}
+    {{TWITTER_TAGS}}
+    {{CITATION_META}}
+
+    <link rel="icon" href="{{ASSET_PREFIX}}assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="{{ASSET_PREFIX}}site.webmanifest" />
+    <link
+      rel="preload"
+      href="{{ASSET_PREFIX}}assets/fonts/lato-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="{{ASSET_PREFIX}}styles.css?v=20261013-research" />
+
+    <script type="application/ld+json">
+      {{JSON_LD}}
+    </script>
+  </head>
+  <body class="research-page" id="top">
+    <a class="skip-link" href="#main">{{SKIP_LABEL}}</a>
+
+    <header class="site-header research-header">
+      <a class="monogram" href="{{HOME_URL}}" aria-label="{{BACK_LABEL}}">
+        <span>CCL</span><i aria-hidden="true"></i>
+      </a>
+
+      <nav class="research-header-nav" aria-label="{{BACK_LABEL}}">
+        <a class="research-home-link" href="{{HOME_URL}}">
+          <span aria-hidden="true">&larr;</span>
+          <span>{{BACK_LABEL}}</span>
+        </a>
+      </nav>
+
+      <nav class="language-switcher research-language-switcher" aria-label="Language / 语言 / 語言">
+        {{LANGUAGE_LINKS}}
+      </nav>
+    </header>
+
+    <main id="main" class="research-main">
+      <article class="research-article">
+        <header class="research-hero">
+          <div class="research-hero-copy">
+            <p class="eyebrow">{{PAGE_LABEL}}</p>
+            <p class="research-publication-kicker" lang="en">
+              <span>{{JOURNAL}}</span>
+              <span aria-hidden="true">&middot;</span>
+              <time datetime="{{YEAR}}">{{YEAR}}</time>
+            </p>
+            <h1 lang="en">{{PAPER_TITLE}}</h1>
+            <p class="research-authors" lang="en">{{AUTHORS_HTML}}</p>
+            <p class="research-summary">{{SUMMARY}}</p>
+
+            <div class="research-actions">
+              <a
+                class="button button-dark research-paper-link"
+                href="{{DOI_URL}}"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="{{DOI_LABEL}}: {{DOI}}"
+              >
+                <span>{{DOI}}</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              {{CODE_LINK_HTML}}
+            </div>
+          </div>
+
+          <div class="research-concept" aria-hidden="true">
+            {{CONCEPT_ART_HTML}}
+          </div>
+        </header>
+
+        <div class="research-body">
+          <section class="research-section" aria-labelledby="research-problem-heading">
+            <p class="section-index">01 / {{PROBLEM_LABEL}}</p>
+            <h2 id="research-problem-heading">{{PROBLEM_LABEL}}</h2>
+            <p>{{PROBLEM}}</p>
+          </section>
+
+          <section class="research-section" aria-labelledby="research-approach-heading">
+            <p class="section-index">02 / {{APPROACH_LABEL}}</p>
+            <h2 id="research-approach-heading">{{APPROACH_LABEL}}</h2>
+            <p>{{APPROACH}}</p>
+          </section>
+
+          <section class="research-section research-section-accent" aria-labelledby="research-why-heading">
+            <p class="section-index">03 / {{WHY_LABEL}}</p>
+            <h2 id="research-why-heading">{{WHY_LABEL}}</h2>
+            <p>{{WHY}}</p>
+          </section>
+
+          <section class="research-details" aria-labelledby="publication-details-heading">
+            <div class="research-details-heading">
+              <p class="section-index">04 / {{PUBLICATION_DETAILS_LABEL}}</p>
+              <h2 id="publication-details-heading">{{PUBLICATION_DETAILS_LABEL}}</h2>
+            </div>
+
+            <dl class="publication-facts">
+              <div>
+                <dt>{{AUTHORS_LABEL}}</dt>
+                <dd lang="en">{{AUTHORS_HTML}}</dd>
+              </div>
+              <div>
+                <dt>{{JOURNAL_LABEL}}</dt>
+                <dd lang="en"><cite>{{JOURNAL}}</cite></dd>
+              </div>
+              <div>
+                <dt>{{YEAR_LABEL}}</dt>
+                <dd><time datetime="{{YEAR}}">{{YEAR}}</time></dd>
+              </div>
+              <div>
+                <dt>{{DOI_LABEL}}</dt>
+                <dd>
+                  <a href="{{DOI_URL}}" target="_blank" rel="noopener noreferrer">{{DOI}}</a>
+                </dd>
+              </div>
+            </dl>
+
+            <div class="bibtex-block">
+              <p class="bibtex-label">BibTeX</p>
+              <pre tabindex="0"><code>{{BIBTEX}}</code></pre>
+            </div>
+          </section>
+
+          <nav class="related-research" aria-labelledby="related-research-heading">
+            <p class="section-index">05 / {{RELATED_LABEL}}</p>
+            <h2 id="related-research-heading">{{RELATED_LABEL}}</h2>
+            <div class="related-research-grid">
+              {{RELATED_RESEARCH_HTML}}
+            </div>
+          </nav>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer research-footer">
+      <p>&copy; 2026 Chengchun Liu</p>
+      <p>{{FOOTER_TEXT}}</p>
+      <a href="#top">{{BACK_TOP}}</a>
+    </footer>
+  </body>
+</html>

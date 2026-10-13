@@ -1,8 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-language="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chengchun Liu" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta
       name="description"
       data-i18n-content="metaDescription"
@@ -10,8 +12,13 @@
     />
     <meta name="theme-color" content="#f2efe6" />
     <link rel="canonical" href="https://chengchunliu.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/" />
+    <link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/" />
+
     <meta property="og:type" content="website" />
-    <meta property="og:title" data-i18n-content="pageTitle" content="Chengchun Liu — AI for Chemistry" />
+    <meta property="og:title" data-i18n-content="pageTitle" content="Chengchun Liu (刘丞军) | AI for Chemistry, Molecular Spectroscopy &amp; Scientific Agents" />
     <meta
       property="og:description"
       data-i18n-content="socialDescription"
@@ -25,7 +32,7 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" data-i18n-content="socialImageAlt" content="Chengchun Liu — AI for Chemistry research portfolio" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" data-i18n-content="pageTitle" content="Chengchun Liu — AI for Chemistry" />
+    <meta name="twitter:title" data-i18n-content="pageTitle" content="Chengchun Liu (刘丞军) | AI for Chemistry, Molecular Spectroscopy &amp; Scientific Agents" />
     <meta
       name="twitter:description"
       data-i18n-content="socialDescription"
@@ -33,41 +40,104 @@
     />
     <meta name="twitter:image" content="https://chengchunliu.github.io/assets/og-preview.png" />
     <meta name="twitter:image:alt" data-i18n-content="socialImageAlt" content="Chengchun Liu — AI for Chemistry research portfolio" />
-    <title data-i18n="pageTitle">Chengchun Liu — AI for Chemistry</title>
+    <title data-i18n="pageTitle">Chengchun Liu (刘丞军) | AI for Chemistry, Molecular Spectroscopy &amp; Scientific Agents</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="preload" href="assets/fonts/lato-regular.ttf" as="font" type="font/ttf" crossorigin />
-    <link rel="preload" href="assets/fonts/lato-bold.ttf" as="font" type="font/ttf" crossorigin />
-    <link rel="preload" href="assets/chengchun-liu.jpg" as="image" />
-    <link rel="stylesheet" href="styles.css?v=20261013-advisor" />
+    <link rel="preload" href="assets/fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="styles.css?v=20261013-seo" />
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Chengchun Liu",
-        "url": "https://chengchunliu.github.io/",
-        "image": "https://chengchunliu.github.io/assets/chengchun-liu.jpg",
-        "affiliation": {
-          "@type": "CollegeOrUniversity",
-          "name": "Peking University"
-        },
-        "jobTitle": "Ph.D. Candidate",
-        "email": "mailto:liuchengchun@stu.pku.edu.cn",
-        "sameAs": [
-          "https://scholar.google.com/citations?user=iRoA5jUAAAAJ",
-          "https://github.com/ChengchunLiu",
-          "https://orcid.org/0009-0002-5550-4145",
-          "https://www.linkedin.com/in/chengchun-liu-9a93bb243/",
-          "https://www.instagram.com/liuchengchun/"
-        ],
-        "knowsAbout": [
-          "Artificial intelligence for chemistry",
-          "Molecular spectroscopy",
-          "Molecular geometry refinement",
-          "Scientific agents",
-          "Chromatography"
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://chengchunliu.github.io/#website",
+      "url": "https://chengchunliu.github.io/",
+      "name": "Chengchun Liu Research Portfolio",
+      "alternateName": [
+        "刘丞军学术主页",
+        "劉丞軍學術網站"
+      ],
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "zh-Hant"
+      ]
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://chengchunliu.github.io/#webpage",
+      "url": "https://chengchunliu.github.io/",
+      "name": "Chengchun Liu (刘丞军) | AI for Chemistry, Molecular Spectroscopy & Scientific Agents",
+      "description": "Chengchun Liu is a Ph.D. candidate at Peking University working on AI for chemistry, molecular spectra, geometry refinement, and scientific agents.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://chengchunliu.github.io/#website"
+      },
+      "about": {
+        "@id": "https://chengchunliu.github.io/#person"
+      },
+      "mainEntity": {
+        "@id": "https://chengchunliu.github.io/#person"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://chengchunliu.github.io/#portrait"
       }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://chengchunliu.github.io/#portrait",
+      "url": "https://chengchunliu.github.io/assets/chengchun-liu-360.jpg",
+      "contentUrl": "https://chengchunliu.github.io/assets/chengchun-liu-360.jpg",
+      "caption": "Portrait of Chengchun Liu"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://chengchunliu.github.io/#person",
+      "name": "Chengchun Liu",
+      "alternateName": [
+        "刘丞军",
+        "劉丞軍"
+      ],
+      "url": "https://chengchunliu.github.io/",
+      "image": {
+        "@id": "https://chengchunliu.github.io/#portrait"
+      },
+      "jobTitle": "Ph.D. candidate",
+      "email": "liuchengchun@stu.pku.edu.cn",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Peking University",
+        "url": "https://www.pku.edu.cn/"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Nankai University",
+        "url": "https://en.nankai.edu.cn/"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0002-5550-4145",
+        "url": "https://orcid.org/0009-0002-5550-4145"
+      },
+      "sameAs": [
+        "https://scholar.google.com/citations?user=iRoA5jUAAAAJ",
+        "https://github.com/ChengchunLiu",
+        "https://orcid.org/0009-0002-5550-4145",
+        "https://www.linkedin.com/in/chengchun-liu-9a93bb243/",
+        "https://www.instagram.com/liuchengchun/"
+      ],
+      "knowsAbout": [
+        "Artificial intelligence for chemistry",
+        "Molecular spectroscopy",
+        "Molecular geometry refinement",
+        "Scientific agents",
+        "Chromatography"
+      ]
+    }
+  ]
+}
     </script>
   </head>
   <body>
@@ -103,9 +173,9 @@
       </nav>
       <div class="header-actions">
         <div class="language-switcher" role="group" data-i18n-aria-label="languageSelector" aria-label="Language">
-          <button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
-          <button type="button" data-language="zh-Hans" lang="zh-Hans" aria-label="简体中文" aria-pressed="false">简</button>
-          <button type="button" data-language="zh-Hant" lang="zh-Hant" aria-label="繁體中文" aria-pressed="false">繁</button>
+          <a href="/" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a>
+          <a href="/zh-hans/" lang="zh-Hans" hreflang="zh-Hans" aria-label="简体中文" >简</a>
+          <a href="/zh-hant/" lang="zh-Hant" hreflang="zh-Hant" aria-label="繁體中文" >繁</a>
         </div>
         <details class="mobile-menu">
           <summary data-i18n="menu">Menu</summary>
@@ -128,14 +198,13 @@
             <span data-i18n="heroLine1">AI for chemistry.</span>
             <em data-i18n="heroLine2">Built to reason.</em>
           </h1>
-          <p class="hero-intro" data-i18n="heroIntro">
-            Toward scientific AI that connects measurement, mechanism, and discovery.
-          </p>
+          <p class="hero-intro" data-i18n="heroIntro">Toward scientific AI that connects measurement, mechanism, and discovery.</p>
           <div class="hero-actions">
             <a class="button button-dark" href="#work">
               <span data-i18n="exploreWork">Explore selected work</span>
               <span aria-hidden="true">↓</span>
             </a>
+            <div class="platform-links" data-i18n-aria-label="platformProfiles" aria-label="Research and social profiles">
             <a
               class="button button-text platform-link"
               href="https://scholar.google.com/citations?user=iRoA5jUAAAAJ"
@@ -207,19 +276,30 @@
                 <span>Instagram</span>
               </span>
             </a>
+            </div>
           </div>
         </div>
 
         <aside class="profile-card reveal" data-i18n-aria-label="profileSummary" aria-label="Profile summary">
           <div class="profile-photo-wrap">
-            <img
-              class="profile-photo"
-              src="assets/chengchun-liu.jpg"
-              alt="Portrait of Chengchun Liu"
-              data-i18n-alt="portraitAlt"
-              width="760"
-              height="1013"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="assets/chengchun-liu-180.webp 180w, assets/chengchun-liu-360.webp 360w"
+                sizes="90px"
+              />
+              <img
+                class="profile-photo"
+                src="assets/chengchun-liu-180.jpg"
+                srcset="assets/chengchun-liu-180.jpg 180w, assets/chengchun-liu-360.jpg 360w"
+                sizes="90px"
+                alt="Portrait of Chengchun Liu"
+                data-i18n-alt="portraitAlt"
+                width="180"
+                height="225"
+                decoding="async"
+              />
+            </picture>
           </div>
           <div class="profile-meta">
             <p class="profile-name" data-i18n="displayName">Chengchun Liu</p>
@@ -243,10 +323,7 @@
         <div class="section-heading reveal">
           <p class="section-index">01 / <span data-i18n="workLabel">Selected work</span></p>
           <h2 data-i18n="workHeading">Selected publications</h2>
-          <p data-i18n="workIntro">
-            Research across molecular structure elucidation, quantum geometry,
-            interpretable learning, and chemical automation.
-          </p>
+          <p data-i18n="workIntro">Research across molecular structure elucidation, quantum geometry, interpretable learning, and chemical automation.</p>
         </div>
 
         <article class="work-card work-card-featured accent-blue reveal">
@@ -254,12 +331,9 @@
             <div class="work-kicker" lang="en">
               <span>Angewandte Chemie International Edition · 2026</span>
             </div>
-            <h3 id="work-spectromol" lang="en">Hypothesis-and-Refinement Learning of Organic Structures From Multimodal Spectroscopic Data</h3>
+            <h3 id="work-spectromol" lang="en"><a href="/research/spectromol-multimodal-structure-elucidation/">Hypothesis-and-Refinement Learning of Organic Structures From Multimodal Spectroscopic Data</a></h3>
             <p class="work-authors" lang="en">Chengchun Liu<sup>†</sup>, Zhiyuan Yan<sup>†</sup>, Li Yuan, Hao Li, Boxuan Zhao, Yonghong Tian, Bartosz A. Grzybowski, and Fanyang Mo</p>
-            <p data-i18n="spectroDesc">
-              A hypothesis-and-refinement system that proposes molecular structures from multimodal spectra,
-              then repairs them with formula-, exact-mass-, and unsaturation-aware molecular generation.
-            </p>
+            <p data-i18n="spectroDesc">A hypothesis-and-refinement system that proposes molecular structures from multimodal spectra, then repairs them with formula-, exact-mass-, and unsaturation-aware molecular generation.</p>
             <div class="tag-list" data-i18n-aria-label="topics" aria-label="Topics">
               <span data-i18n="tagMultimodal">Multimodal spectra</span>
               <span data-i18n="tagElucidation">Structure elucidation</span>
@@ -320,12 +394,9 @@
             <div class="work-kicker" lang="en">
               <span>Journal of Chemical Theory and Computation · 2026</span>
             </div>
-            <h3 id="work-geoopt" lang="en">A Cross-Domain Graph Learning Protocol for Single-Step Molecular Geometry Refinement</h3>
+            <h3 id="work-geoopt" lang="en"><a href="/research/geoopt-net/">A Cross-Domain Graph Learning Protocol for Single-Step Molecular Geometry Refinement</a></h3>
             <p class="work-authors" lang="en">Chengchun Liu, Wendi Cai, Boxuan Zhao, and Fanyang Mo</p>
-            <p data-i18n="geoDesc">
-              GeoOpt-Net uses SE(3)-equivariant, multifidelity learning to map inexpensive force-field conformers
-              directly toward DFT-quality molecular geometries in one deterministic forward pass.
-            </p>
+            <p data-i18n="geoDesc">GeoOpt-Net uses SE(3)-equivariant, multifidelity learning to map inexpensive force-field conformers directly toward DFT-quality molecular geometries in one deterministic forward pass.</p>
             <div class="tag-list" data-i18n-aria-label="topics" aria-label="Topics">
               <span>SE(3)</span>
               <span data-i18n="tagGeometry">Molecular geometry</span>
@@ -430,12 +501,9 @@
               <div class="work-kicker" lang="en">
                 <span>Advanced Science · 2026</span>
               </div>
-              <h3 id="work-uhsr" lang="en">Unsupervised Hierarchical Symbolic Regression for Interpretable Property Modeling in Complex Multi-Variable Systems</h3>
+              <h3 id="work-uhsr" lang="en"><a href="/research/uhsr-symbolic-regression/">Unsupervised Hierarchical Symbolic Regression for Interpretable Property Modeling in Complex Multi-Variable Systems</a></h3>
               <p class="work-authors" lang="en">Siyu Lou<sup>†</sup>, Chengchun Liu<sup>†</sup>, Dongxiao Zhang, Yuntian Chen, and Fanyang Mo</p>
-              <p data-i18n="symbolicDesc">
-                A layered symbolic-learning framework that turns complex multivariable relationships into compact,
-                chemically interpretable equations.
-              </p>
+              <p data-i18n="symbolicDesc">A layered symbolic-learning framework that turns complex multivariable relationships into compact, chemically interpretable equations.</p>
               <a class="paper-link" href="https://doi.org/10.1002/advs.202521200" target="_blank" rel="noopener noreferrer" aria-describedby="work-uhsr">
                 <span data-i18n="viewPaper">View paper</span><span aria-hidden="true">↗</span>
               </a>
@@ -467,12 +535,9 @@
               <div class="work-kicker" lang="en">
                 <span>Accounts of Chemical Research · 2026</span>
               </div>
-              <h3 id="work-chromatography" lang="en">Automation and AI-Powered Prediction in Chromatographic Separation</h3>
+              <h3 id="work-chromatography" lang="en"><a href="/research/ai-chromatography/">Automation and AI-Powered Prediction in Chromatographic Separation</a></h3>
               <p class="work-authors" lang="en">Chengchun Liu and Fanyang Mo</p>
-              <p data-i18n="chromDesc">
-                A research perspective connecting automated experimentation, retention prediction,
-                condition optimization, and closed-loop chromatographic separation.
-              </p>
+              <p data-i18n="chromDesc">A research perspective connecting automated experimentation, retention prediction, condition optimization, and closed-loop chromatographic separation.</p>
               <a class="paper-link" href="https://doi.org/10.1021/acs.accounts.5c00677" target="_blank" rel="noopener noreferrer" aria-describedby="work-chromatography">
                 <span data-i18n="viewPaper">View paper</span><span aria-hidden="true">↗</span>
               </a>
@@ -502,12 +567,9 @@
               <div class="work-kicker" lang="en">
                 <span>Analytical Chemistry · 2024</span>
               </div>
-              <h3 id="work-infrared" lang="en">Infrared Spectra Prediction for Functional Group Region Utilizing a Machine Learning Approach With Structural Neighboring Mechanism</h3>
+              <h3 id="work-infrared" lang="en"><a href="/research/infrared-spectrum-prediction/">Infrared Spectra Prediction for Functional Group Region Utilizing a Machine Learning Approach With Structural Neighboring Mechanism</a></h3>
               <p class="work-authors" lang="en">Chengchun Liu, Ruqiang Zou, and Fanyang Mo</p>
-              <p data-i18n="irDesc">
-                A functional-group-centered learning strategy that uses local structural context to improve
-                the accuracy, robustness, and interpretability of infrared-spectrum prediction.
-              </p>
+              <p data-i18n="irDesc">A functional-group-centered learning strategy that uses local structural context to improve the accuracy, robustness, and interpretability of infrared-spectrum prediction.</p>
               <div class="work-links">
                 <a class="paper-link" href="https://doi.org/10.1021/acs.analchem.4c01972" target="_blank" rel="noopener noreferrer" aria-describedby="work-infrared">
                   <span data-i18n="viewPaper">View paper</span><span aria-hidden="true">↗</span>
@@ -541,7 +603,7 @@
         <div class="about-grid">
           <div class="about-copy reveal">
             <p>
-              <span data-i18n="aboutP1Before">I am a Ph.D. candidate in Materials Physics and Chemistry at Peking University, advised by</span><a
+              <span data-i18n="aboutP1Before">I am a Ph.D. candidate in Materials Physics and Chemistry at Peking University, advised by </span><a
                 class="advisor-link"
                 href="https://mogroup.pku.edu.cn/en/"
                 target="_blank"
@@ -552,10 +614,7 @@
                 <span data-i18n="advisorName">Prof. Fanyang Mo</span><span aria-hidden="true">↗</span>
               </a><span data-i18n="aboutP1After">. Before that, I studied chemistry at Nankai University.</span>
             </p>
-            <p data-i18n="aboutP2">
-              My research asks how AI can work with the evidence chemists actually use: spectra,
-              three-dimensional structures, physical constraints, experimental conditions, and iterative feedback.
-            </p>
+            <p data-i18n="aboutP2">My research asks how AI can work with the evidence chemists actually use: spectra, three-dimensional structures, physical constraints, experimental conditions, and iterative feedback.</p>
           </div>
           <div class="timeline reveal" data-i18n-aria-label="educationExperience" aria-label="Education and experience">
             <div class="timeline-item">
@@ -581,10 +640,7 @@
         <div class="contact-copy reveal">
           <p class="section-index">03 / <span data-i18n="contactLabel">Contact</span></p>
           <h2 data-i18n="contactHeading">Let’s talk about scientific AI.</h2>
-          <p data-i18n="contactIntro">
-            I’m interested in collaborations around molecular reasoning, chemistry agents,
-            spectroscopy, geometric learning, and research automation.
-          </p>
+          <p data-i18n="contactIntro">I’m interested in collaborations around molecular reasoning, chemistry agents, spectroscopy, geometric learning, and research automation.</p>
         </div>
         <div class="contact-actions">
           <a
@@ -612,6 +668,6 @@
       <a href="#top"><span data-i18n="backTop">Back to top</span> ↑</a>
     </footer>
 
-    <script src="script.js?v=20261013-advisor"></script>
+    <script src="script.js?v=20261013-seo"></script>
   </body>
 </html>

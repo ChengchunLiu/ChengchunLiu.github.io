@@ -1,10 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://chengchunliu.github.io/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/zh-hans/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/zh-hant/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/research/spectromol-multimodal-structure-elucidation/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/spectromol-multimodal-structure-elucidation/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/spectromol-multimodal-structure-elucidation/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/spectromol-multimodal-structure-elucidation/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/zh-hans/research/spectromol-multimodal-structure-elucidation/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/spectromol-multimodal-structure-elucidation/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/spectromol-multimodal-structure-elucidation/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/spectromol-multimodal-structure-elucidation/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/spectromol-multimodal-structure-elucidation/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/spectromol-multimodal-structure-elucidation/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/spectromol-multimodal-structure-elucidation/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/research/geoopt-net/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/geoopt-net/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/geoopt-net/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/geoopt-net/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/geoopt-net/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/zh-hans/research/geoopt-net/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/geoopt-net/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/geoopt-net/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/geoopt-net/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/geoopt-net/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/zh-hant/research/geoopt-net/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/geoopt-net/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/geoopt-net/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/geoopt-net/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/geoopt-net/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/research/uhsr-symbolic-regression/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/uhsr-symbolic-regression/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/uhsr-symbolic-regression/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/uhsr-symbolic-regression/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/uhsr-symbolic-regression/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/zh-hans/research/uhsr-symbolic-regression/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/uhsr-symbolic-regression/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/uhsr-symbolic-regression/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/uhsr-symbolic-regression/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/uhsr-symbolic-regression/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/zh-hant/research/uhsr-symbolic-regression/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/uhsr-symbolic-regression/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/uhsr-symbolic-regression/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/uhsr-symbolic-regression/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/uhsr-symbolic-regression/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/research/ai-chromatography/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/ai-chromatography/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/ai-chromatography/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/ai-chromatography/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/ai-chromatography/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/zh-hans/research/ai-chromatography/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/ai-chromatography/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/ai-chromatography/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/ai-chromatography/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/ai-chromatography/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/zh-hant/research/ai-chromatography/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/ai-chromatography/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/ai-chromatography/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/ai-chromatography/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/ai-chromatography/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/research/infrared-spectrum-prediction/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/infrared-spectrum-prediction/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/infrared-spectrum-prediction/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/infrared-spectrum-prediction/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/infrared-spectrum-prediction/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/zh-hans/research/infrared-spectrum-prediction/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/infrared-spectrum-prediction/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/infrared-spectrum-prediction/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/infrared-spectrum-prediction/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/infrared-spectrum-prediction/" />
+  </url>
+  <url>
+    <loc>https://chengchunliu.github.io/zh-hant/research/infrared-spectrum-prediction/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/infrared-spectrum-prediction/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/infrared-spectrum-prediction/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/infrared-spectrum-prediction/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/infrared-spectrum-prediction/" />
   </url>
 </urlset>
-

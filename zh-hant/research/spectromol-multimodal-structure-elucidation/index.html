@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>多模態光譜分子結構解析｜劉丞軍</title>
+    <meta name="description" content="透過假設—精修框架，結合多模態光譜、分子式、精確質量與不飽和度約束推斷有機分子結構。" />
+    <meta name="author" content="Chengchun Liu" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#f2efe6" />
+
+    <link rel="canonical" href="https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/" />
+    <link rel="alternate" hreflang="en" href="https://chengchunliu.github.io/research/spectromol-multimodal-structure-elucidation/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://chengchunliu.github.io/zh-hans/research/spectromol-multimodal-structure-elucidation/" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/" />
+    <link rel="alternate" hreflang="x-default" href="https://chengchunliu.github.io/research/spectromol-multimodal-structure-elucidation/" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="多模態光譜分子結構解析｜劉丞軍" />
+    <meta property="og:description" content="透過假設—精修框架，結合多模態光譜、分子式、精確質量與不飽和度約束推斷有機分子結構。" />
+    <meta property="og:url" content="https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/" />
+    <meta property="og:site_name" content="Chengchun Liu" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:image" content="https://chengchunliu.github.io/assets/og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="SpectroMol — Chengchun Liu" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="多模態光譜分子結構解析｜劉丞軍" />
+    <meta name="twitter:description" content="透過假設—精修框架，結合多模態光譜、分子式、精確質量與不飽和度約束推斷有機分子結構。" />
+    <meta name="twitter:image" content="https://chengchunliu.github.io/assets/og-preview.png" />
+    <meta name="twitter:image:alt" content="SpectroMol — Chengchun Liu" />
+    <meta name="citation_title" content="Hypothesis-and-Refinement Learning of Organic Structures From Multimodal Spectroscopic Data" />
+    <meta name="citation_author" content="Chengchun Liu" />
+    <meta name="citation_author" content="Zhiyuan Yan" />
+    <meta name="citation_author" content="Li Yuan" />
+    <meta name="citation_author" content="Hao Li" />
+    <meta name="citation_author" content="Boxuan Zhao" />
+    <meta name="citation_author" content="Yonghong Tian" />
+    <meta name="citation_author" content="Bartosz A. Grzybowski" />
+    <meta name="citation_author" content="Fanyang Mo" />
+    <meta name="citation_journal_title" content="Angewandte Chemie International Edition" />
+    <meta name="citation_publication_date" content="2026-09-11" />
+    <meta name="citation_doi" content="10.1002/anie.9212238" />
+    <meta name="citation_abstract_html_url" content="https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/" />
+
+    <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="../../../site.webmanifest" />
+    <link
+      rel="preload"
+      href="../../../assets/fonts/lato-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../../../styles.css?v=20261013-research" />
+
+    <script type="application/ld+json">
+      {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/#webpage",
+      "url": "https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/",
+      "name": "多模態光譜分子結構解析｜劉丞軍",
+      "description": "透過假設—精修框架，結合多模態光譜、分子式、精確質量與不飽和度約束推斷有機分子結構。",
+      "inLanguage": "zh-Hant",
+      "isPartOf": {
+        "@id": "https://chengchunliu.github.io/#website"
+      },
+      "mainEntity": {
+        "@id": "https://doi.org/10.1002/anie.9212238"
+      },
+      "breadcrumb": {
+        "@id": "https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/#breadcrumb"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1002/anie.9212238",
+      "url": "https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/",
+      "sameAs": "https://doi.org/10.1002/anie.9212238",
+      "headline": "Hypothesis-and-Refinement Learning of Organic Structures From Multimodal Spectroscopic Data",
+      "name": "Hypothesis-and-Refinement Learning of Organic Structures From Multimodal Spectroscopic Data",
+      "abstract": "一套「假設—精修」系統：先依據多模態光譜提出分子結構假設，再以同時納入分子式、精確質量與不飽和度的分子生成模型加以修正。",
+      "inLanguage": "zh-Hant",
+      "datePublished": "2026-09-11",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Chengchun Liu",
+          "@id": "https://chengchunliu.github.io/#person",
+          "alternateName": [
+            "刘丞军",
+            "劉丞軍"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Zhiyuan Yan"
+        },
+        {
+          "@type": "Person",
+          "name": "Li Yuan"
+        },
+        {
+          "@type": "Person",
+          "name": "Hao Li"
+        },
+        {
+          "@type": "Person",
+          "name": "Boxuan Zhao"
+        },
+        {
+          "@type": "Person",
+          "name": "Yonghong Tian"
+        },
+        {
+          "@type": "Person",
+          "name": "Bartosz A. Grzybowski"
+        },
+        {
+          "@type": "Person",
+          "name": "Fanyang Mo"
+        }
+      ],
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Angewandte Chemie International Edition"
+      },
+      "pagination": "e9212238",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.1002/anie.9212238",
+        "url": "https://doi.org/10.1002/anie.9212238"
+      },
+      "keywords": [
+        "AI for chemistry",
+        "automated structure elucidation",
+        "multimodal spectroscopy",
+        "NMR spectroscopy",
+        "infrared spectroscopy",
+        "mass spectrometry",
+        "molecular generation",
+        "chemical constraints"
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/#webpage"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Chengchun Liu",
+          "item": "https://chengchunliu.github.io/zh-hant/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "SpectroMol",
+          "item": "https://chengchunliu.github.io/zh-hant/research/spectromol-multimodal-structure-elucidation/"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+  </head>
+  <body class="research-page" id="top">
+    <a class="skip-link" href="#main">跳至主要內容</a>
+
+    <header class="site-header research-header">
+      <a class="monogram" href="/zh-hant/" aria-label="返回代表成果">
+        <span>CCL</span><i aria-hidden="true"></i>
+      </a>
+
+      <nav class="research-header-nav" aria-label="返回代表成果">
+        <a class="research-home-link" href="/zh-hant/">
+          <span aria-hidden="true">&larr;</span>
+          <span>返回代表成果</span>
+        </a>
+      </nav>
+
+      <nav class="language-switcher research-language-switcher" aria-label="Language / 语言 / 語言">
+        <a href="/research/spectromol-multimodal-structure-elucidation/" lang="en" hreflang="en">EN</a>
+        <a href="/zh-hans/research/spectromol-multimodal-structure-elucidation/" lang="zh-Hans" hreflang="zh-Hans">简</a>
+        <a href="/zh-hant/research/spectromol-multimodal-structure-elucidation/" lang="zh-Hant" hreflang="zh-Hant" aria-current="page">繁</a>
+      </nav>
+    </header>
+
+    <main id="main" class="research-main">
+      <article class="research-article">
+        <header class="research-hero">
+          <div class="research-hero-copy">
+            <p class="eyebrow">研究解讀</p>
+            <p class="research-publication-kicker" lang="en">
+              <span>Angewandte Chemie International Edition</span>
+              <span aria-hidden="true">&middot;</span>
+              <time datetime="2026">2026</time>
+            </p>
+            <h1 lang="en">Hypothesis-and-Refinement Learning of Organic Structures From Multimodal Spectroscopic Data</h1>
+            <p class="research-authors" lang="en">Chengchun Liu<sup aria-label="equal contributor">†</sup>, Zhiyuan Yan<sup aria-label="equal contributor">†</sup>, Li Yuan, Hao Li, Boxuan Zhao, Yonghong Tian, Bartosz A. Grzybowski, and Fanyang Mo</p>
+            <p class="research-summary">一套「假設—精修」系統：先依據多模態光譜提出分子結構假設，再以同時納入分子式、精確質量與不飽和度的分子生成模型加以修正。</p>
+
+            <div class="research-actions">
+              <a
+                class="button button-dark research-paper-link"
+                href="https://doi.org/10.1002/anie.9212238"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="DOI: 10.1002/anie.9212238"
+              >
+                <span>10.1002/anie.9212238</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              
+            </div>
+          </div>
+
+          <div class="research-concept" aria-hidden="true">
+            <div class="concept-art concept-spectromol">
+  <span class="concept-orbit"></span>
+  <span class="concept-chip">01 · SpectroMol</span>
+  <div class="concept-grid">
+    <span class="concept-node">NMR + IR + MS</span>
+    <span class="concept-node is-primary">Hypothesis</span>
+    <span class="concept-node">Refinement</span>
+  </div>
+  <span class="concept-line"></span>
+  <div class="concept-spectrum"></div>
+</div>
+          </div>
+        </header>
+
+        <div class="research-body">
+          <section class="research-section" aria-labelledby="research-problem-heading">
+            <p class="section-index">01 / 研究問題</p>
+            <h2 id="research-problem-heading">研究問題</h2>
+            <p>分子結構解析是一個欠定的逆問題：每種光譜只提供部分證據，而多個不同結構都可能看似合理。</p>
+          </section>
+
+          <section class="research-section" aria-labelledby="research-approach-heading">
+            <p class="section-index">02 / 研究方法</p>
+            <h2 id="research-approach-heading">研究方法</h2>
+            <p>此流程先整合互補光譜證據提出候選結構，再利用分子式、精確質量和不飽和度等顯式化學約束進行精修。</p>
+          </section>
+
+          <section class="research-section research-section-accent" aria-labelledby="research-why-heading">
+            <p class="section-index">03 / 研究意義</p>
+            <h2 id="research-why-heading">研究意義</h2>
+            <p>將多模態證據與顯式化學約束結合，可使自動結構解析更符合化學規律，也更便於檢查與解釋。</p>
+          </section>
+
+          <section class="research-details" aria-labelledby="publication-details-heading">
+            <div class="research-details-heading">
+              <p class="section-index">04 / 發表資訊</p>
+              <h2 id="publication-details-heading">發表資訊</h2>
+            </div>
+
+            <dl class="publication-facts">
+              <div>
+                <dt>作者</dt>
+                <dd lang="en">Chengchun Liu<sup aria-label="equal contributor">†</sup>, Zhiyuan Yan<sup aria-label="equal contributor">†</sup>, Li Yuan, Hao Li, Boxuan Zhao, Yonghong Tian, Bartosz A. Grzybowski, and Fanyang Mo</dd>
+              </div>
+              <div>
+                <dt>期刊</dt>
+                <dd lang="en"><cite>Angewandte Chemie International Edition</cite></dd>
+              </div>
+              <div>
+                <dt>年份</dt>
+                <dd><time datetime="2026">2026</time></dd>
+              </div>
+              <div>
+                <dt>DOI</dt>
+                <dd>
+                  <a href="https://doi.org/10.1002/anie.9212238" target="_blank" rel="noopener noreferrer">10.1002/anie.9212238</a>
+                </dd>
+              </div>
+            </dl>
+
+            <div class="bibtex-block">
+              <p class="bibtex-label">BibTeX</p>
+              <pre tabindex="0"><code>@article{liu2026spectromol,
+  title   = {Hypothesis-and-Refinement Learning of Organic Structures From Multimodal Spectroscopic Data},
+  author  = {Chengchun Liu and Zhiyuan Yan and Li Yuan and Hao Li and Boxuan Zhao and Yonghong Tian and Bartosz A. Grzybowski and Fanyang Mo},
+  journal = {Angewandte Chemie International Edition},
+  year    = {2026},
+  date    = {2026-09-11},
+  eid     = {e9212238},
+  doi     = {10.1002/anie.9212238},
+  url     = {https://doi.org/10.1002/anie.9212238}
+}</code></pre>
+            </div>
+          </section>
+
+          <nav class="related-research" aria-labelledby="related-research-heading">
+            <p class="section-index">05 / 相關研究</p>
+            <h2 id="related-research-heading">相關研究</h2>
+            <div class="related-research-grid">
+              <a class="related-research-card" href="/zh-hant/research/geoopt-net/">
+  <span class="related-research-meta">Journal of Chemical Theory and Computation · 2026</span>
+  <strong class="related-research-title" lang="en">A Cross-Domain Graph Learning Protocol for Single-Step Molecular Geometry Refinement</strong>
+  <span class="related-research-arrow" aria-hidden="true">→</span>
+</a>
+              <a class="related-research-card" href="/zh-hant/research/uhsr-symbolic-regression/">
+  <span class="related-research-meta">Advanced Science · 2026</span>
+  <strong class="related-research-title" lang="en">Unsupervised Hierarchical Symbolic Regression for Interpretable Property Modeling in Complex Multi-Variable Systems</strong>
+  <span class="related-research-arrow" aria-hidden="true">→</span>
+</a>
+            </div>
+          </nav>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer research-footer">
+      <p>&copy; 2026 Chengchun Liu</p>
+      <p>化學人工智慧 · 研究網站</p>
+      <a href="#top">返回頂端</a>
+    </footer>
+  </body>
+</html>

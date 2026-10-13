@@ -11,7 +11,7 @@ Target public address: `https://chengchunliu.github.io/`
 - Public research interests and selected first/co-first-author work
 - Peking University email address
 - Google Scholar, GitHub, ORCID, DOI, and public code links
-- LinkedIn public profile
+- LinkedIn and Instagram public profiles
 
 ## Intentionally excluded
 
@@ -29,5 +29,14 @@ Target public address: `https://chengchunliu.github.io/`
 2. Push the local `main` branch.
 3. In repository **Settings → Pages**, select **GitHub Actions** as the source if it is not selected automatically.
 4. Wait for the **Deploy portfolio to GitHub Pages** workflow to finish.
-5. Verify the live site, left-side section navigation, DOI/code links, mobile layout, and social preview.
+5. Verify the three language homepages, fifteen research pages, left-side section navigation, DOI/code links, mobile layout, and social preview.
+6. Add the site to Google Search Console, verify ownership, and submit `https://chengchunliu.github.io/sitemap.xml`.
+
+Before every release, run:
+
+```bash
+python3 scripts/build_site.py --check
+```
+
+The external-profile follow-up list is maintained in `SEO_CHECKLIST.md`. It intentionally excludes requests to change Peking University or the Mo research group websites.
 
