@@ -1,6 +1,6 @@
-# Chengchun Liu — Research Portfolio
+# Chengchun Liu (刘丞军 / 劉丞軍) — Research Portfolio
 
-A lightweight multilingual research portfolio for `https://chengchunliu.github.io/`. English, Simplified Chinese, and Traditional Chinese are generated as separate static pages so visitors and search engines receive the correct language without waiting for JavaScript.
+The official multilingual research portfolio of Chengchun Liu (刘丞军 / 劉丞軍), available at `https://chengchunliu.github.io/`. English, Simplified Chinese, and Traditional Chinese are generated as separate static pages so visitors and search engines receive the correct language without waiting for JavaScript.
 
 ## Build the site
 
