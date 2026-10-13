@@ -34,7 +34,13 @@ function readDefaultCopy() {
 const defaultCopy = readDefaultCopy();
 
 const translations = {
-  en: defaultCopy,
+  en: {
+    ...defaultCopy,
+    aboutP1Before: "I am a Ph.D. candidate in Materials Physics and Chemistry at Peking University, advised by\u00a0",
+    advisorName: "Prof. Fanyang Mo",
+    aboutP1After: ". Before that, I studied chemistry at Nankai University.",
+    advisorLinkLabel: "Prof. Fanyang Mo’s research group website (opens in a new tab)",
+  },
   "zh-Hans": {
     pageTitle: "刘丞军 — 化学人工智能",
     displayName: "刘丞军",
@@ -120,7 +126,10 @@ const translations = {
     openScholar: "打开 Google Scholar",
     aboutLabel: "关于我",
     aboutHeading: "化学、计算，以及能够实现闭环的系统。",
-    aboutP1: "我是北京大学材料物理与化学专业的博士候选人，导师为莫凡洋教授。本科就读于南开大学化学专业。",
+    aboutP1Before: "我是北京大学材料物理与化学专业的博士候选人，导师为",
+    advisorName: "莫凡洋教授",
+    aboutP1After: "。本科就读于南开大学化学专业。",
+    advisorLinkLabel: "莫凡洋教授课题组网站（在新标签页打开）",
     aboutP2: "我的研究关注人工智能如何结合化学家实际使用的各类证据：光谱、三维结构、物理约束、实验条件与迭代反馈。",
     educationExperience: "教育与经历",
     seedPeriod: "2026年8月—至今",
@@ -223,7 +232,10 @@ const translations = {
     openScholar: "開啟 Google Scholar",
     aboutLabel: "關於我",
     aboutHeading: "化學、計算，以及能夠實現閉環的系統。",
-    aboutP1: "我是北京大學材料物理與化學專業的博士候選人，指導教授為莫凡洋教授。大學期間就讀於南開大學化學專業。",
+    aboutP1Before: "我是北京大學材料物理與化學專業的博士候選人，指導教授為",
+    advisorName: "莫凡洋教授",
+    aboutP1After: "。大學期間就讀於南開大學化學專業。",
+    advisorLinkLabel: "莫凡洋教授課題組網站（在新分頁開啟）",
     aboutP2: "我的研究關注人工智慧如何結合化學家實際使用的各類證據：光譜、三維結構、物理約束、實驗條件與迭代回饋。",
     educationExperience: "教育與經歷",
     seedPeriod: "2026年8月—至今",

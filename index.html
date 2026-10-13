@@ -39,7 +39,7 @@
     <link rel="preload" href="assets/fonts/lato-regular.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="preload" href="assets/fonts/lato-bold.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="preload" href="assets/chengchun-liu.jpg" as="image" />
-    <link rel="stylesheet" href="styles.css?v=20261013-instagram" />
+    <link rel="stylesheet" href="styles.css?v=20261013-advisor" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -540,9 +540,17 @@
         </div>
         <div class="about-grid">
           <div class="about-copy reveal">
-            <p data-i18n="aboutP1">
-              I am a Ph.D. candidate in Materials Physics and Chemistry at Peking University,
-              advised by Prof. Fanyang Mo. Before that, I studied chemistry at Nankai University.
+            <p>
+              <span data-i18n="aboutP1Before">I am a Ph.D. candidate in Materials Physics and Chemistry at Peking University, advised by</span><a
+                class="advisor-link"
+                href="https://mogroup.pku.edu.cn/en/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n-aria-label="advisorLinkLabel"
+                aria-label="Prof. Fanyang Mo’s research group website (opens in a new tab)"
+              >
+                <span data-i18n="advisorName">Prof. Fanyang Mo</span><span aria-hidden="true">↗</span>
+              </a><span data-i18n="aboutP1After">. Before that, I studied chemistry at Nankai University.</span>
             </p>
             <p data-i18n="aboutP2">
               My research asks how AI can work with the evidence chemists actually use: spectra,
@@ -604,6 +612,6 @@
       <a href="#top"><span data-i18n="backTop">Back to top</span> ↑</a>
     </footer>
 
-    <script src="script.js?v=20261013-instagram"></script>
+    <script src="script.js?v=20261013-advisor"></script>
   </body>
 </html>

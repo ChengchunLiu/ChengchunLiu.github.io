@@ -1390,6 +1390,41 @@ h1 em {
   margin-bottom: 28px;
 }
 
+.advisor-link {
+  margin-left: 0.18em;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.18em;
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.14em;
+  transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+
+.advisor-link span:last-child {
+  font-family: var(--sans);
+  font-size: 0.48em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.advisor-link:hover,
+.advisor-link:focus-visible {
+  color: var(--ink);
+  text-decoration-color: var(--blue);
+}
+
+.advisor-link:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+html[lang^="zh"] .advisor-link {
+  margin-left: 0;
+}
+
 .timeline {
   border-top: 1px solid var(--ink);
 }
