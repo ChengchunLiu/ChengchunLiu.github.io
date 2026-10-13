@@ -120,6 +120,7 @@ RESEARCH_REQUIRED_TOKENS = {
     "RELATED_RESEARCH_HTML",
     "LANGUAGE_LINKS",
     "FOOTER_TEXT",
+    "PROFILE_NAME",
     "BACK_TOP",
 }
 
@@ -448,6 +449,7 @@ def home_json_ld(language: str, locale: Mapping[str, str], canonical: str) -> st
                 "about": {"@id": f"{BASE_URL}/#person"},
                 "mainEntity": {"@id": f"{BASE_URL}/#person"},
                 "primaryImageOfPage": {"@id": f"{BASE_URL}/#portrait"},
+                "dateModified": DEFAULT_LASTMOD,
             },
             {
                 "@type": "ImageObject",
@@ -461,6 +463,8 @@ def home_json_ld(language: str, locale: Mapping[str, str], canonical: str) -> st
                 "@id": f"{BASE_URL}/#person",
                 "name": "Chengchun Liu",
                 "alternateName": ["刘丞军", "劉丞軍"],
+                "givenName": "Chengchun",
+                "familyName": "Liu",
                 "url": f"{BASE_URL}/",
                 "image": {"@id": f"{BASE_URL}/#portrait"},
                 "jobTitle": "Ph.D. candidate",
@@ -495,6 +499,7 @@ def home_json_ld(language: str, locale: Mapping[str, str], canonical: str) -> st
                     "Scientific agents",
                     "Chromatography",
                 ],
+                "mainEntityOfPage": {"@id": f"{BASE_URL}/#webpage"},
             },
         ],
     }
@@ -860,6 +865,7 @@ def research_context(
         "RELATED_RESEARCH_HTML": related_research(paper, papers, language),
         "LANGUAGE_LINKS": language_links(paths, language),
         "FOOTER_TEXT": html.escape(locale["researchFooter"]),
+        "PROFILE_NAME": html.escape(locale["displayName"]),
         "BACK_TOP": html.escape(locale["backTop"]),
     }
 

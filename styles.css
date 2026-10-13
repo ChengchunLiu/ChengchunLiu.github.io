@@ -235,18 +235,18 @@ html[lang="zh-Hant"] .side-guide-name {
   letter-spacing: 0.12em;
 }
 
-html[lang^="zh"] h1,
+html[lang^="zh"] .hero-title,
 html[lang^="zh"] .section-heading h2,
 html[lang^="zh"] .about-heading h2,
 html[lang^="zh"] .contact-section h2 {
   letter-spacing: 0;
 }
 
-html[lang^="zh"] h1 {
+html[lang^="zh"] .hero-title {
   line-height: 1.02;
 }
 
-html[lang^="zh"] h1 em {
+html[lang^="zh"] .hero-title em {
   margin-left: clamp(10px, 5vw, 74px);
 }
 
@@ -306,7 +306,7 @@ p {
   margin-top: 0;
 }
 
-h1 {
+.hero-title {
   max-width: 900px;
   margin-bottom: 30px;
   font-family: var(--serif);
@@ -316,15 +316,41 @@ h1 {
   letter-spacing: -0.064em;
 }
 
-h1 span,
-h1 em {
+.hero-title span,
+.hero-title em {
   display: block;
 }
 
-h1 em {
+.hero-title em {
   margin-left: clamp(14px, 7vw, 106px);
   color: var(--blue);
   font-weight: 400;
+}
+
+.hero-name {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 7px 12px;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.13em;
+}
+
+.hero-name > span {
+  display: inline;
+  margin: 0;
+  color: var(--ink);
+}
+
+.hero-name small {
+  color: var(--muted);
+  font: 700 10px/1.35 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: none;
 }
 
 .hero-intro {
@@ -1848,21 +1874,21 @@ html[lang^="zh"] .advisor-link {
     gap: 30px;
   }
 
-  h1 {
+  .hero-title {
     font-size: clamp(61px, 20vw, 94px);
     line-height: 0.88;
   }
 
-  h1 em {
+  .hero-title em {
     margin-left: 0;
   }
 
-  html[lang^="zh"] h1 {
+  html[lang^="zh"] .hero-title {
     font-size: clamp(40px, 11.5vw, 64px);
     line-height: 1.08;
   }
 
-  html[lang^="zh"] h1 em {
+  html[lang^="zh"] .hero-title em {
     margin-left: 0;
   }
 
